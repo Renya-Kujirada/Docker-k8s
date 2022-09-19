@@ -12,3 +12,7 @@
 RUN useradd -m -d /home/dev-user -s /bin/bash dev-user
 USER dev-user
 ```
+
+## その他メモ
+- dockerでは，同一名のDockerイメージを複数作成することができない
+  - すでに存在している同一名称のイメージは<none>という名称未設定の状態に置き換わる．この症状をdanglingという．
