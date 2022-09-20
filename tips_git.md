@@ -25,7 +25,7 @@ git init --shared --bare
 ### local上での作業
 
 - local上で，VSCodeを利用しGitリポジトリを新規作成する．
-- readme.mdなど適当なファイルを作成しコミットを実行する（別に空コミットでも構わない）．
+- readme.mdなど適当なファイルを作成し，コミットを実行する（別に空コミットでも構わない）．
 - local上で，VSCodeを利用しremote repositoryを設定する．
   - ctrl + shift + p でコマンドパレットを開き，Git Add Remoteと入力．
 - リモートリポジトリのURL（ファイルパス）を入力する．その際，リモートリポジトリの名前はoriginなどにする．
