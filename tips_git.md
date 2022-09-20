@@ -47,7 +47,7 @@ C:\Users\<username>\OneDrive\Document\myRemoteRepository\remote.git
 ### 第三者が開発に参画する場合
 - 作業用リポジトリをクローンすれば良い．その際，OneDriveのフォルダ名にスペース文字が含まれる場合，スペース文字をエスケープするようリモートリポジトリのpathを指定する．
   - 前提として，リモートリポジトリが格納されているOneDriveディレクトリを第三者に共有する必要がある．
-  - VSCodeのGit cloneの機能ではうまくできなかった．
+  - OneDriveのフォルダ名にスペース文字が含まれる場合，VSCodeのGit cloneの機能ではうまくできなかった．
 ```sh
 # windowsの場合
 git clone "C:\Users\<username>\OneDrive\Document\myRemoteRepository\remote.git"
