@@ -19,3 +19,7 @@ USER dev-user
   ```
   docker image prune
   ```
+
+## RUNとCMDの違い
+- RUN：ビルド時にコンテナ内で実行される
+- CMD：完成したイメージからコンテナを作成するときに実行される
