@@ -35,7 +35,8 @@ sudo apt-get --purge remove cuda-*
 - 以下コマンドでインストールするべきドライバを確認する．
 `ubuntu-drivers devices`
 
-- 以下は表示例．基本的にはrecommendedと表記されているものをインストールすれば良い（が，私の場合はうまくいかなかった．）
+- 以下は表示例．基本的にはrecommendedと表記されているものをインストールすれば良い．
+  - ※私の場合はうまくいかなかったため，自身のGPUの型番を調べ，nvidiaのサイトで対象ドライバのバージョンを検索する必要があった．
 ```
 == /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0 ==
 modalias : pci:v000010DEd00002204sv000010DEsd00001454bc03sc00i00
@@ -53,8 +54,8 @@ driver   : nvidia-driver-515 - distro non-free
 driver   : xserver-xorg-video-nouveau - distro free builtin
 ```
 
-- 自身のGPUの型番を以下のコマンドで調べ，[nvidiaのサイト](https://www.nvidia.com/Download/index.aspx)で対象ドライバのバージョンを検索．
-  - 自分の場合は，515.76だった．
+- （任意）自身のGPUの型番を以下のコマンドで調べ，[nvidiaのサイト](https://www.nvidia.com/Download/index.aspx)で対象ドライバのバージョンを検索．
+  - 自分の場合は，515.76だったため，nvidia-driver-515をインストールすることにした．
 `sudo lshw -C display`
 
 - 以下コマンドで指定のバージョンのドライバをインストール．(以下は515のバージョンをインストールする場合の例．Tab補完可．)
