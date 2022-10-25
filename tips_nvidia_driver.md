@@ -33,7 +33,6 @@ sudo apt-get --purge remove cuda-*
 以下に手順を示す．
 
 - 以下コマンドでインストールするべきドライバを確認する．
-
 `ubuntu-drivers devices`
 
 - 以下は表示例．基本的にはrecommendedと表記されているものをインストールすれば良い．
@@ -57,11 +56,9 @@ driver   : xserver-xorg-video-nouveau - distro free builtin
 
 - （任意）自身のGPUの型番を以下のコマンドで調べ，[nvidiaのサイト](https://www.nvidia.com/Download/index.aspx)で対象ドライバのバージョンを検索．
   - 自分の場合は，515.76だったため，nvidia-driver-515をインストールすることにした．
-
 `sudo lshw -C display`
 
 - 以下コマンドで指定のバージョンのドライバをインストール．(以下は515のバージョンをインストールする場合の例．Tab補完可．)
-
 `sudo apt install nvidia-driver-515`
 
 - `sudo reboot`で再起動．
@@ -77,7 +74,6 @@ docker: error response from daemon: could not select device driver "" with capab
 ```
 
 - 任意のパスで以下のスクリプトを作成し，実行．
-
 ```sh
 $ cat nvidia-container-runtime-script.sh
  
@@ -92,11 +88,9 @@ $ sh nvidia-container-runtime-script.sh
 ```
 
 - driverの削除時に，nvidia-dockerに関するソフトウェアが削除されているため，再度インストール．
-
 `sudo apt-get install nvidia-container-runtime`
 
 - Dockerを再起動．
-
 `service docker restart`
 
 #### 問題解決できたことを確認
@@ -104,15 +98,12 @@ $ sh nvidia-container-runtime-script.sh
 以上のステップでdocker上でGPUを利用できるはず．以下に簡単な確認方法を示す．
 
 - TensorFlow公式のDockerイメージを利用してコンテナ上でGPUを利用してみる．
-
 `docker run --gpus all -it --rm --name tensorflow-gpu -p 8888:8888 tensorflow/tensorflow:latest-gpu-py3-jupyter`
 
 - ターミナル上に表示された下記のようなリンクをブラウザで開く．
-
 `http://127.0.0.1:8888/?token=xxxxxxxxxxxxxx`
 
 - Jupyter Notebookにアクセスできるため，下記コードを実行してGPU利用可否を確認．
-
 ```py
 from tensorflow.python.client import device_lib
 device_lib.list_local_devices()
@@ -121,14 +112,12 @@ device_lib.list_local_devices()
 ### 対策
 
 自動更新(バージョンアップ)の停止をするために，以下コマンドを実行．
-
 ```sh
 sudo dpkg-reconfigure --priority=low unattended-upgrades
 ```
 
 「自動的に安定版の更新をダウンロードしてインストールしますか？」という画面表示が出てくるので，「いいえ」を選択．
 自動更新が停止したことを確認するには，以下ファイルの内容を表示し，以下のように値が0となっていることを確認．
-
 ```sh
 cat /etc/apt/apt.conf.d/20auto-upgrades
 
