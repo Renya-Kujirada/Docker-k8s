@@ -1,33 +1,33 @@
 # nvidia-driver周りのエラー時のTips
 
-## nvidia-smi実行時にGPU情報が出力されない
+本書では，dockerを導入しているマシン上でnvidia-driverが壊れた場合の対応方法を述べる．
 
-### 事象
+## 事象
 
-`nvidia-smi`を実行すると，以下のエラーがでてしまい，ubuntuのデュアルディスプレイ表示やdockerの利用ができなくなってしまった．
-rebootを試みても直らない．
+`nvidia-smi`を実行すると，以下のエラーがでてしまい，GPU情報が出力されなくなってしまった．
+また，ubuntuのデュアルディスプレイ表示やdockerの利用ができなくなってしまった．rebootを試みても直らない．
 
 ```
 NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
 ```
 
-### 原因
+## 原因
 
 原因不明だが，検索すると以下が出てきた．
 
 1. `apt-get upgrade` が影響している可能性
 2. ubuntuの自動更新
 
-### 対処
+## 対処
 
-#### nvidiaドライバ，cuda関連のドライバをアンインストール
+### nvidiaドライバ，cuda関連のドライバをアンインストール
 
 ```sh
 sudo apt-get --purge remove nvidia-*
 sudo apt-get --purge remove cuda-*
 ```
 
-#### nvidiaドライバのインストール
+### nvidiaドライバのインストール
 
 `sudo ubuntu-drivers autoinstall`でインストールしてもよいが，失敗する事例をよく聞く（？）ので自分は手動でインストールした．
 以下に手順を示す．
@@ -77,7 +77,7 @@ sudo reboot
 nvidia-smi
 ```
 
-#### NVIDIA Container Runtimeのインストール
+### NVIDIA Container Runtimeのインストール
 
 現状のままだと，dockerコンテナ上でGPUを利用しようとすると下記エラーが出てくる．以下に対処手順を示す．
 ```sh
@@ -108,7 +108,7 @@ sudo apt-get install nvidia-container-runtime
 service docker restart
 ```
 
-#### 問題解決できたことを確認
+### 問題解決できたことを確認
 
 以上のステップでdocker上でGPUを利用できるはず．以下に簡単な確認方法を示す．
 
@@ -128,7 +128,7 @@ from tensorflow.python.client import device_lib
 device_lib.list_local_devices()
 ```
 
-### 対策
+## 対策
 
 自動更新(バージョンアップ)の停止をするために，以下コマンドを実行．
 
@@ -146,7 +146,7 @@ APT::Periodic::Update-Package-Lists "0";
 APT::Periodic::Unattended-Upgrade "0";
 ```
 
-### 参考
+## 参考
 
 - [nvidia-smiでGPU情報が出力されなくなったときの対処法](https://jskangaroo.hatenablog.com/entry/2021/10/23/151151)
 - [docker: Error response from daemon: could not select device driver “” with capabilities: [[gpu]].の対処方法](https://www.yurui-deep-learning.com/2021/08/17/docker-error-response-from-daemon-could-not-select-device-driver-with-capabilities-gpu/)
