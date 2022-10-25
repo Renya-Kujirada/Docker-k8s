@@ -5,9 +5,9 @@ Tips about docker, dev-container(vscode), k8s, nvidia-driver, git.
 
 Vscodeのdev-containerを利用する際のTips
 
-### [Git](https://github.com/Renya-Kujirada/Infra-tips/blob/main/tips_git.md)
+### [OneDriveを活用したGit運用](https://github.com/Renya-Kujirada/Infra-tips/blob/main/tips_git.md)
 
-業務などでGitサーバーが利用できない場合の，OneDriveを活用したGit運用に関するTips
+業務などでGitサーバーが利用できない場合のGit運用に関するTips
 
 ### [nvidia-driver周りのエラー時のTips](https://github.com/Renya-Kujirada/Infra-tips/blob/main/tips_nvidia_driver.md)
 
