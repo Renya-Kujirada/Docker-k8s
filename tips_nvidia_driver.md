@@ -64,7 +64,7 @@ driver   : xserver-xorg-video-nouveau - distro free builtin
 
 - `nvidia-smi`でドライバ情報を確認．
 
-#### nvidia-dockerに関するソフトウェアのインストール
+#### NVIDIA Container Runtimeのインストール
 
 現状のままだと，dockerコンテナ上でGPUを利用しようとすると下記エラーが出てくる．以下に対処手順を示す．
 
@@ -94,6 +94,23 @@ $ sh nvidia-container-runtime-script.sh
 - Dockerを再起動．
 
 `service docker restart`
+
+#### 問題解決できたことを確認
+
+以上のステップでdocker上でGPUを利用できるはず．以下に簡単な確認方法を示す．
+
+- TensorFlow公式のDockerイメージを利用してコンテナ上でGPUを利用してみる．
+
+`docker run --gpus all -it --rm --name tensorflow-gpu -p 8888:8888 tensorflow/tensorflow:latest-gpu-py3-jupyter`
+
+- ターミナル上に表示された下記のようなリンクをブラウザで開く．
+`http://127.0.0.1:8888/?token=xxxxxxxxxxxxxx`
+
+- Jupyter Notebookにアクセスできるため，下記コードを実行してGPU利用可否を確認．
+```py
+from tensorflow.python.client import device_lib
+device_lib.list_local_devices()
+```
 
 ### 対策
 
