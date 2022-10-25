@@ -131,5 +131,7 @@ APT::Periodic::Unattended-Upgrade "0";
 ```
 
 ### 参考
-- [自動更新停止](https://qiita.com/karaage0703/items/705f1b750c486f00d554#%E8%87%AA%E5%8B%95%E6%9B%B4%E6%96%B0%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%AE%E5%81%9C%E6%AD%A2)
-- 
+- [nvidia-smiでGPU情報が出力されなくなったときの対処法](https://jskangaroo.hatenablog.com/entry/2021/10/23/151151)
+- [docker: Error response from daemon: could not select device driver “” with capabilities: [[gpu]].の対処方法](https://www.yurui-deep-learning.com/2021/08/17/docker-error-response-from-daemon-could-not-select-device-driver-with-capabilities-gpu/)
+- [DockerでGPUを使おうとしたらError response from daemon: linux runtime spec devices: could not select device driver “” with capabilities: [[gpu]]](https://cocoinit23.com/docker-gpu-error-response-from-daemon-linux-runtime-spec-devices-could-not-select-device-driver-with-capabilities-gpu/)
+- [Ubuntuをちょっと使いやすくする設定集](https://qiita.com/karaage0703/items/705f1b750c486f00d554#%E8%87%AA%E5%8B%95%E6%9B%B4%E6%96%B0%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%AE%E5%81%9C%E6%AD%A2)
