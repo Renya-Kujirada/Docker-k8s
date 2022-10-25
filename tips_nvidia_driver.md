@@ -62,7 +62,6 @@ driver   : xserver-xorg-video-nouveau - distro free builtin
 `sudo lshw -C display`
 
 - 以下コマンドで指定のバージョンのドライバをインストール．(以下は515のバージョンをインストールする場合の例．Tab補完可．)
-
 ```sudo apt install nvidia-driver-515```
 
 - `sudo reboot`で再起動．
