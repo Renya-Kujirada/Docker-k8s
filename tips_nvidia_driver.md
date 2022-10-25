@@ -15,7 +15,7 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 
 原因不明だが，検索すると以下が出てきた．
 
-1. apt-get upgrade が影響している可能性
+1. `apt-get upgrade` が影響している可能性
 2. ubuntuの自動更新
 
 ### 対処
@@ -67,9 +67,15 @@ sudo lshw -C display
 sudo apt install nvidia-driver-515
 ```
 
-- `sudo reboot`で再起動．
+- 以下コマンドで再起動．
+```sh
+sudo reboot
+```
 
-- `nvidia-smi`でドライバ情報を確認．
+- ドライバ情報を確認．
+```sh
+nvidia-smi
+```
 
 #### NVIDIA Container Runtimeのインストール
 
@@ -145,4 +151,5 @@ APT::Periodic::Unattended-Upgrade "0";
 - [nvidia-smiでGPU情報が出力されなくなったときの対処法](https://jskangaroo.hatenablog.com/entry/2021/10/23/151151)
 - [docker: Error response from daemon: could not select device driver “” with capabilities: [[gpu]].の対処方法](https://www.yurui-deep-learning.com/2021/08/17/docker-error-response-from-daemon-could-not-select-device-driver-with-capabilities-gpu/)
 - [DockerでGPUを使おうとしたらError response from daemon: linux runtime spec devices: could not select device driver “” with capabilities: [[gpu]]](https://cocoinit23.com/docker-gpu-error-response-from-daemon-linux-runtime-spec-devices-could-not-select-device-driver-with-capabilities-gpu/)
+- [DockerでのディープラーニングGPU学習環境構築方法](https://qiita.com/karaage0703/items/e79a8ad2f57abc6872aa#%E6%89%8B%E5%8B%95apt%E3%81%A7%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
 - [Ubuntuをちょっと使いやすくする設定集](https://qiita.com/karaage0703/items/705f1b750c486f00d554#%E8%87%AA%E5%8B%95%E6%9B%B4%E6%96%B0%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%AE%E5%81%9C%E6%AD%A2)
