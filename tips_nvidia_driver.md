@@ -33,7 +33,7 @@ sudo apt-get --purge remove cuda-*
 以下に手順を示す．
 
 - 以下コマンドでインストールするべきドライバを確認する．
-- 
+
 `ubuntu-drivers devices`
 
 - 以下は表示例．基本的にはrecommendedと表記されているものをインストールすれば良い．
