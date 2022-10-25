@@ -87,10 +87,14 @@ $ sh nvidia-container-runtime-script.sh
 ```
 
 - driverの削除時に，nvidia-dockerに関するソフトウェアが削除されているため，再度インストール．
-```sudo apt-get install nvidia-container-runtime```
+```sh
+sudo apt-get install nvidia-container-runtime
+```
 
 - Dockerを再起動．
-```service docker restart```
+```sh
+service docker restart
+```
 
 #### 問題解決できたことを確認
 
