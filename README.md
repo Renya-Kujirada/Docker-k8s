@@ -9,7 +9,7 @@ Vscodeのdev-containerを利用する際のTips
 
 業務などでGitサーバーが利用できない場合，OneDriveをGitサーバーの代替として利用する際のTips
 
-### [nvidia-driver周りのエラー時の解決方法](https://renya-kujirada.github.io/Infra-tips/tips_nvidia_driver.md)
+### [nvidia-driver周りのエラー時の解決方法](https://renya-kujirada.github.io/Infra-tips/tips_nvidia_driver.html)
 
 dockerを導入しているマシン上でnvidia-driverが壊れた場合(`nvidia-smi`で以下のエラーが発生する場合)のTips
 
