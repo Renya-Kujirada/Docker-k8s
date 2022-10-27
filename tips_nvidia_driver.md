@@ -32,7 +32,7 @@ sudo apt-get --purge remove cuda-*
 `sudo ubuntu-drivers autoinstall`でインストールしてもよいが，失敗する事例をよく聞く（？）ので自分は手動でインストールした．
 以下に手順を示す．
 
-- 以下コマンドでインストールするべきドライバを確認する．
+以下コマンドでインストールするべきドライバを確認する．
 ```sh
 ubuntu-drivers devices
 ```
