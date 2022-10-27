@@ -5,13 +5,13 @@ Tips about docker, dev-container(vscode), k8s, nvidia-driver, git.
 
 Vscodeのdev-containerを利用する際のTips
 
-### [OneDriveを活用したGit運用](https://github.com/Renya-Kujirada/Infra-tips/blob/main/tips_git.md)
+### [OneDriveを活用したGit運用](https://renya-kujirada.github.io/Infra-tips/tips_git.html)
 
-業務などでGitサーバーが利用できない場合のGit運用に関するTips
+業務などでGitサーバーが利用できない場合，OneDriveをGitサーバーの代替として利用する際のTips
 
-### [nvidia-driver周りのエラー時のTips](https://github.com/Renya-Kujirada/Infra-tips/blob/main/tips_nvidia_driver.md)
+### [nvidia-driver周りのエラー時の解決方法](https://renya-kujirada.github.io/Infra-tips/tips_nvidia_driver.md)
 
-dockerを導入しているマシン上でnvidia-driverが壊れた場合(`nvidia-smi`で以下のエラーが発生する場合)の対応方法
+dockerを導入しているマシン上でnvidia-driverが壊れた場合(`nvidia-smi`で以下のエラーが発生する場合)のTips
 
 ```sh
 NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
