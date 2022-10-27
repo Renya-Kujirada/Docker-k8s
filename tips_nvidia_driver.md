@@ -39,8 +39,8 @@ ubuntu-drivers devices
 ```
 
 - 以下は表示例．基本的にはrecommendedと表記されているものをインストールすれば良い．
+  - 私の場合はうまくいかなかったため，自身のGPUの型番を調べ，nvidiaのサイトで対象ドライバのバージョンを検索する必要があった．
 
-※私の場合はうまくいかなかったため，自身のGPUの型番を調べ，nvidiaのサイトで対象ドライバのバージョンを検索する必要があった．
 
 ```
 == /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0 ==
@@ -61,6 +61,7 @@ driver   : xserver-xorg-video-nouveau - distro free builtin
 
 - （任意）自身のGPUの型番を以下のコマンドで調べ，[nvidiaのサイト](https://www.nvidia.com/Download/index.aspx)で対象ドライバのバージョンを検索．
   - 私の場合は，515.76だったため，nvidia-driver-515をインストールすることにした．
+
 
 ```sh
 sudo lshw -C display
