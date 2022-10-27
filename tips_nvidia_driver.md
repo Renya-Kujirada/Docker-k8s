@@ -32,7 +32,7 @@ sudo apt-get --purge remove cuda-*
 `sudo ubuntu-drivers autoinstall`でインストールしてもよいが，失敗する事例をよく聞く（？）ので自分は手動でインストールした．
 以下に手順を示す．
 
-以下コマンドでインストールするべきドライバを確認する．
+- 以下コマンドでインストールするべきドライバを確認する．
 ```sh
 ubuntu-drivers devices
 ```
@@ -85,6 +85,7 @@ docker: error response from daemon: could not select device driver "" with capab
 ```
 
 - 任意のパスで以下のスクリプトを作成し，実行．
+
 ```sh
 $ cat nvidia-container-runtime-script.sh
  
@@ -99,11 +100,13 @@ $ sh nvidia-container-runtime-script.sh
 ```
 
 - driverの削除時に，nvidia-dockerに関するソフトウェアが削除されているため，再度インストール．
+
 ```sh
 sudo apt-get install nvidia-container-runtime
 ```
 
 - Dockerを再起動．
+
 ```sh
 service docker restart
 ```
