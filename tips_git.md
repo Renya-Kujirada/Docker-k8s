@@ -40,14 +40,16 @@ C:\Users\<username>\OneDrive\Document\myRemoteRepository\remote.git
 
 - local上でリモートリポジトリにpushする．
   - 設定したリモートリポジトリのURLは下記コマンドで確認できる．
- 
-  ```sh
-  git remote -v
-  ```
+
+```sh
+git remote -v
+```
+
 ### 第三者が開発に参画する場合
 - 作業用リポジトリをクローンすれば良い．その際，OneDriveのフォルダ名にスペース文字が含まれる場合，スペース文字をエスケープするようリモートリポジトリのpathを指定する．
   - 前提として，リモートリポジトリが格納されているOneDriveディレクトリを第三者に共有する必要がある．
   - OneDriveのフォルダ名にスペース文字が含まれる場合，VSCodeのGit cloneの機能ではうまくできなかった．
+
 ```sh
 # windowsの場合
 git clone "C:\Users\<username>\OneDrive\Document\myRemoteRepository\remote.git"
@@ -65,9 +67,11 @@ fast-forwardを行わないマージ方法を示す．
 ```sh
 git checkout master
 ```
+
 - マージコミットを新規作成する（fast-forwardしない）よう，merge commitを明示的に行う．
   - masterブランチの状態が変更されていない場合，masterブランチは単純に統合するブランチに移動するだけで変更内容を取り込むことができる．このようなマージをfast-forwardマージと呼び，git mergeコマンドで下記のように引数を明示しなければ，fast-forwardでマージされる．
   - ブランチがそのまま残るため，統合するブランチで行った作業の特定が容易になるというメリットがある．
+
 ```sh
 git merge --no-ff <branch>
 ```
