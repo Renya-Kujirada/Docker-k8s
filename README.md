@@ -1,7 +1,7 @@
 # Infra-tips
 Tips about docker, dev-container(vscode), k8s, nvidia-driver, git.
 
-### [Docker on Vscode](https://github.com/Renya-Kujirada/Infra-tips/blob/main/tips_dev-container.md)
+### [Docker on Vscode](https://Renya-Kujirada.github.io/Infra-tips/tips_dev-container.md)
 
 Vscodeのdev-containerを利用する際のTips
 
