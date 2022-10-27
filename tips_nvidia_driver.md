@@ -33,12 +33,14 @@ sudo apt-get --purge remove cuda-*
 以下に手順を示す．
 
 - 以下コマンドでインストールするべきドライバを確認する．
+
 ```sh
 ubuntu-drivers devices
 ```
 
 - 以下は表示例．基本的にはrecommendedと表記されているものをインストールすれば良い．
   - 私の場合はうまくいかなかったため，自身のGPUの型番を調べ，nvidiaのサイトで対象ドライバのバージョンを検索する必要があった．
+
 ```
 == /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0 ==
 modalias : pci:v000010DEd00002204sv000010DEsd00001454bc03sc00i00
@@ -58,21 +60,25 @@ driver   : xserver-xorg-video-nouveau - distro free builtin
 
 - （任意）自身のGPUの型番を以下のコマンドで調べ，[nvidiaのサイト](https://www.nvidia.com/Download/index.aspx)で対象ドライバのバージョンを検索．
   - 私の場合は，515.76だったため，nvidia-driver-515をインストールすることにした．
+
 ```sh
 sudo lshw -C display
 ```
 
 - 以下コマンドで指定のバージョンのドライバをインストール．(以下は515のバージョンをインストールする場合の例．Tab補完可．)
+
 ```sh
 sudo apt install nvidia-driver-515
 ```
 
 - 以下コマンドで再起動．
+
 ```sh
 sudo reboot
 ```
 
 - ドライバ情報を確認．
+
 ```sh
 nvidia-smi
 ```
@@ -80,6 +86,7 @@ nvidia-smi
 ### NVIDIA Container Runtimeのインストール
 
 現状のままだと，dockerコンテナ上でGPUを利用しようとすると下記エラーが出てくる．以下に対処手順を示す．
+
 ```sh
 docker: error response from daemon: could not select device driver "" with capabilities: [[gpu]].
 ```
@@ -116,16 +123,19 @@ service docker restart
 以上のステップでdocker上でGPUを利用できるはず．以下に簡単な確認方法を示す．
 
 - TensorFlow公式のDockerイメージを利用してコンテナ上でGPUを利用してみる．
+
 ```sh
 docker run --gpus all -it --rm --name tensorflow-gpu -p 8888:8888 tensorflow/tensorflow:latest-gpu-py3-jupyter
 ```
 
 - ターミナル上に表示される下記のようなリンクをブラウザで開く．
+
 ```sh
 http://127.0.0.1:8888/?token=xxxxxxxxxxxxxx
 ```
 
 - Jupyter Notebookにアクセスできるため，下記コードを実行してGPU利用可否を確認．
+
 ```py
 from tensorflow.python.client import device_lib
 device_lib.list_local_devices()
