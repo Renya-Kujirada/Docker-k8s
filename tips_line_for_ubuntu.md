@@ -56,4 +56,4 @@ StartupWMClass=crx_pbpoojghcbigbheeamegjbdailkaeglf
 
 ## 参考
 
-https://qiita.com/north_redwing/items/357bf0cfbc17990a5276
+[【UbuntuでLINE!?】 UbuntuでLINEを使う方法を画像付きで説明する](https://qiita.com/north_redwing/items/357bf0cfbc17990a5276)
