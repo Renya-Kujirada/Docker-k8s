@@ -31,7 +31,7 @@ ls
   - 私の場合，app-id = pbpoojghcbigbheeamegjbdailkaeglfであった．
 
 - LINEのアイコン画像を任意のディレクトリにコピー（ここではPicturesディレクトリにコピーしたとする．）
-  - この処理を実施た理由は後述する．
+  - この処理を実施した理由は後述する．
 
 ```sh
 cp /home/"username"/.config/google-chrome/Default/Extensions/"ID"/"version"/res/img/line_logo_128x128_on.png ~/Pictures/
