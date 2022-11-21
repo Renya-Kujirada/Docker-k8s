@@ -16,3 +16,7 @@ dockerを導入しているマシン上でnvidia-driverが壊れた場合(`nvidi
 ```sh
 NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
 ```
+
+### [Line for Ubuntu](https://renya-kujirada.github.io/Infra-tips/tips_line_for_ubuntu.md)
+
+LINEをUbuntuでアプリのように利用したい．
