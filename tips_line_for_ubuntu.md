@@ -14,9 +14,7 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 - chromeのURLに`chrome://extensions/`を入力し，右上のデベロッパーモードをONにする
   - IDとversionを覚えておく
-  - 私の場合，IDとversionは以下だった．
-    - ID: ophjlpahpchlmihnnnihgmmeilfjmjjc
-    - version: 2.5.7_0
+  - 私の場合，ID = ophjlpahpchlmihnnnihgmmeilfjmjjc, version = 2.5.7_0であった．
     
 - 下記コマンドを実行し，現在あるAppを表示しておく
 
