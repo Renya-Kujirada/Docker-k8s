@@ -20,3 +20,7 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 ## [Line for Ubuntu](https://renya-kujirada.github.io/Infra-tips/tips_line_for_ubuntu.html)
 
 LINEをUbuntuでアプリのように利用したい場合のTips
+
+## [Chrome Remote Desktop on Ubuntu](https://renya-kujirada.github.io/Infra-tips/tips_chrome_remote_desktop.html)
+
+ubuntuサーバにremote desktop接続したい場合のTips．team viewerと異なり，remote 接続時にrebootしても接続できるためおすすめ．
