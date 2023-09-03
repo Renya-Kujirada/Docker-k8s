@@ -25,4 +25,6 @@ LINEをUbuntuでアプリのように利用したい場合のTips
 
 ubuntuサーバにremote desktop接続したい場合のTips．team viewerと異なり，remote 接続時にrebootしても接続できるためおすすめ．
 
-## [Tips Cloud9](https://renya-kujirada.github.io/Infra-tips/docs/202309032358/tips_cloud9.html)
+## [Tips AWS Cloud9 for DL Env](https://renya-kujirada.github.io/Infra-tips/docs/202309032358/tips_cloud9.html)
+
+AWS Cloud9を利用したDeep Learning実行環境をクイックに構築するためのTips．CloudFormation template等を紹介している．
