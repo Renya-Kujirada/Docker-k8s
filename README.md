@@ -27,4 +27,4 @@ ubuntuサーバにremote desktop接続したい場合のTips．team viewerと異
 
 ## [Tips AWS Cloud9 for DL Env](https://renya-kujirada.github.io/Infra-tips/docs/202309032358/tips_cloud9.html)
 
-AWS Cloud9を利用したDeep Learning実行環境をクイックに構築するためのTips．CloudFormation template等を紹介している．
+AWS Cloud9上でのDeep Learning実行環境を構築するためのTips．CloudFormation templateを利用し，DeepLearning AMIによってEC2インスタンスを作成することで，SSH環境のCloud9を構築する．
