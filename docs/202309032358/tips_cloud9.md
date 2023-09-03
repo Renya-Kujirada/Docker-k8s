@@ -60,18 +60,13 @@ EC2環境の場合，EC2のライフサイクルを全てCloud9が自動で管�
 ### 利用する AMI
 
 ```
-Deep Learning AMI GPU PyTorch 2.0.1 (Ubuntu 20.04) 20230827
-ami-06c414f3ba4a59e2f (64 ビット (x86))
+AMI Name: Deep Learning AMI GPU PyTorch 2.0.1 (Ubuntu 20.04) 20230827 ami-06c414f3ba4a59e2f (64 ビット (x86))
 仮想化: hvm
 ENA 有効: true
 ルートデバイスタイプ: ebs
-説明
-Supported EC2 instances: P5, P4d, P4de, P3, P3dn, G5, G4dn, G3. Release notes: https://docs.aws.amazon.com/dlami/latest/devguide/appendix-ami-release-notes.html
-アーキテクチャ
-64 ビット (x86)
-
-AMI ID
-ami-06c414f3ba4a59e2f
+説明: Supported EC2 instances: P5, P4d, P4de, P3, P3dn, G5, G4dn, G3. Release notes: https://docs.aws.amazon.com/dlami/latest/devguide/appendix-ami-release-notes.html
+アーキテクチャ: 64 ビット (x86)
+AMI ID: ami-06c414f3ba4a59e2f
 ```
 
 ### template内のUserData内の補足
