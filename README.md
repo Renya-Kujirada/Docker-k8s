@@ -25,4 +25,4 @@ LINEをUbuntuでアプリのように利用したい場合のTips
 
 ubuntuサーバにremote desktop接続したい場合のTips．team viewerと異なり，remote 接続時にrebootしても接続できるためおすすめ．
 
-## [Tips Cloud9](https://renya-kujirada.github.io/aws-cloud9/README.html)
+## [Tips Cloud9](https://renya-kujirada.github.io/aws-cloud9/blob/master/README.html)
