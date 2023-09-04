@@ -25,6 +25,6 @@ LINEをUbuntuでアプリのように利用したい場合のTips
 
 ubuntuサーバにremote desktop接続したい場合のTips．team viewerと異なり，remote 接続時にrebootしても接続できるためおすすめ．
 
-## [Tips AWS Cloud9 for DL Env](https://renya-kujirada.github.io/Infra-tips/docs/202309032358/tips_cloud9.html)
+## [AWS Cloud9 IDE を利用したDeep Learning開発環境を構築する方法](https://renya-kujirada.github.io/Infra-tips/docs/202309032358/tips_cloud9.html)
 
-AWS Cloud9上でのDeep Learning実行環境を構築するためのTips．CloudFormation templateを利用し，DeepLearning AMIによってEC2インスタンスを作成することで，SSH環境のCloud9を構築する．
+AWS Cloud9上でのDeep Learning開発環境を構築するためのTips．CloudFormation templateを利用し，Deep Learning AMIからEC2インスタンスを作成後に，SSH環境のCloud9を構築する．
