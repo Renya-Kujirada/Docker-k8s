@@ -1,6 +1,7 @@
 # nvidia-driver周りのエラー時のTips
 
 本書では，dockerを導入しているマシン上でnvidia-driverが壊れた場合の対応方法を述べる．
+※nvidia-driverのインストール方法について修正した．過去の記事は[本リンク先](https://github.com/Renya-Kujirada/Infra-tips/blob/main/docs/202210252319/tips_nvidia_driver_old.md)にある．(2023/09/04更新)
 
 ## 事象
 
@@ -29,54 +30,16 @@ sudo apt-get --purge remove cuda-*
 
 ### nvidiaドライバのインストール
 
-`sudo ubuntu-drivers autoinstall`でインストールしてもよいが，失敗する事例をよく聞く（？）ので自分は手動でインストールした．
-以下に手順を示す．
-
-- 以下コマンドでインストールするべきドライバを確認する．
+[CUDA Toolkit の公式Webサイト](https://developer.nvidia.com/cuda-downloads?target_os=Linux)を参考に，最新のドライバのみをinstallする．このinstall方法は，[Nvidia Docker公式のFAQ](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#how-do-i-install-the-nvidia-driver)にも記載がある．（なお，以下のコマンドは，Ubuntu 22.04で Installer Typeをdeb(local)とした場合である．）
 
 ```sh
-ubuntu-drivers devices
-```
-
-- 以下は表示例．基本的にはrecommendedと表記されているものをインストールすれば良い．
-  - 私の場合はうまくいかなかったため，自身のGPUの型番を調べ，nvidiaのサイトで対象ドライバのバージョンを検索する必要があった．
-
-
-```
-== /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0 ==
-modalias : pci:v000010DEd00002204sv000010DEsd00001454bc03sc00i00
-vendor   : NVIDIA Corporation
-model    : GA102 [GeForce RTX 3090]
-driver   : nvidia-driver-520 - third-party non-free
-driver   : nvidia-driver-510-server - distro non-free
-driver   : nvidia-driver-515-open - distro non-free
-driver   : nvidia-driver-520-open - third-party non-free recommended
-driver   : nvidia-driver-470-server - distro non-free
-driver   : nvidia-driver-510 - third-party non-free
-driver   : nvidia-driver-470 - distro non-free
-driver   : nvidia-driver-515-server - distro non-free
-driver   : nvidia-driver-515 - distro non-free
-driver   : xserver-xorg-video-nouveau - distro free builtin
-```
-
-- （任意）自身のGPUの型番を以下のコマンドで調べ，[nvidiaのサイト](https://www.nvidia.com/Download/index.aspx)で対象ドライバのバージョンを検索．
-  - 私の場合は，515.76だったため，nvidia-driver-515をインストールすることにした．
-
-
-```sh
-sudo lshw -C display
-```
-
-- 以下コマンドで指定のバージョンのドライバをインストール．(以下は515のバージョンをインストールする場合の例．Tab補完可．)
-
-```sh
-sudo apt install nvidia-driver-515
-```
-
-- 以下コマンドで再起動．
-
-```sh
-sudo reboot
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
+sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
+wget https://developer.download.nvidia.com/compute/cuda/12.2.2/local_installers/cuda-repo-ubuntu2204-12-2-local_12.2.2-535.104.05-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu2204-12-2-local_12.2.2-535.104.05-1_amd64.deb
+sudo cp /var/cuda-repo-ubuntu2204-12-2-local/cuda-*-keyring.gpg /usr/share/keyrings/
+sudo apt-get update
+sudo apt-get -y install cuda-drivers
 ```
 
 - ドライバ情報を確認．
@@ -87,13 +50,13 @@ nvidia-smi
 
 ### NVIDIA Container Runtimeのインストール
 
-現状のままだと，dockerコンテナ上でGPUを利用しようとすると下記エラーが出てくる．以下に対処手順を示す．
+現状のままだと，dockerコンテナ上でGPUを利用しようとすると下記エラーが出てくる．これは，driverの削除時に，nvidia-dockerに関するソフトウェア（docker-container-runtime）が削除されているためである．なので，[nvidia-container-runtimeの公式リポジトリの手順](https://github.com/NVIDIA/nvidia-container-runtime#ubuntu-distributions)に従い，Nvidia Container Runtimeを再インストールするとよい．以下に手順を示す．
 
 ```sh
 docker: error response from daemon: could not select device driver "" with capabilities: [[gpu]].
 ```
 
-- 任意のパスで以下のスクリプトを作成し，実行．
+- リポジトリの設定を行う．以下のように，任意のパスで以下のスクリプトを作成し実行するとよい．
 
 ```sh
 $ cat nvidia-container-runtime-script.sh
@@ -108,7 +71,7 @@ sudo apt-get update
 $ sh nvidia-container-runtime-script.sh
 ```
 
-- driverの削除時に，nvidia-dockerに関するソフトウェアが削除されているため，再度インストール．
+- 以下コマンドで，再度インストール．
 
 ```sh
 sudo apt-get install nvidia-container-runtime
