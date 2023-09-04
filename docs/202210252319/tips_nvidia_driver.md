@@ -131,3 +131,4 @@ APT::Periodic::Unattended-Upgrade "0";
 - [DockerでGPUを使おうとしたらError response from daemon: linux runtime spec devices: could not select device driver “” with capabilities: [[gpu]]](https://cocoinit23.com/docker-gpu-error-response-from-daemon-linux-runtime-spec-devices-could-not-select-device-driver-with-capabilities-gpu/)
 - [DockerでのディープラーニングGPU学習環境構築方法](https://qiita.com/karaage0703/items/e79a8ad2f57abc6872aa#%E6%89%8B%E5%8B%95apt%E3%81%A7%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
 - [Ubuntuをちょっと使いやすくする設定集](https://qiita.com/karaage0703/items/705f1b750c486f00d554#%E8%87%AA%E5%8B%95%E6%9B%B4%E6%96%B0%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%AE%E5%81%9C%E6%AD%A2)
+- [【Ubuntu】DockerでGPUを使うまでの環境構築](https://lilaboc.work/archives/29112270.html)
