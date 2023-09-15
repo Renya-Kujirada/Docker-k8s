@@ -20,7 +20,7 @@
 
 例えば，業務などでCodeWhispererを利用したい場合，コーディングした内容をCodeWhispererに収集されたくないと思うだろう．この場合，どのようにCodeWhispererを利用すればよいのか疑問に思ったため調査した．
 
-ユーザードキュメント[[1]](https://docs.aws.amazon.com/ja_jp/codewhisperer/latest/userguide/sharing-data.html) の Opting out of sharing your content に答えが書いてあった．(AWS公式のFAQにはこの情報は載っていないため注意されたい．)
+ユーザードキュメント[[1]](https://docs.aws.amazon.com/ja_jp/codewhisperer/latest/userguide/sharing-data.html) の Opting out of sharing your content に答えが書いてあった．(AWS公式のFAQにはこの情報は載っておらず，どこに情報が掲載されているのか探すのに時間がかかってしまった．．)
 
 - Cloud9を利用する場合，CodeWhispererはコンテンツ共有を行わない．
 - CodeWhisperer Professional版も同様に，コンテンツ共有を行わない．
