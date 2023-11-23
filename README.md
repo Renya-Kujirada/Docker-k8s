@@ -28,3 +28,7 @@ ubuntuサーバにremote desktop接続したい場合のTips．team viewerと異
 ## [AWS Cloud9 IDE を利用したDeep Learning開発環境を構築する方法](https://renya-kujirada.github.io/Infra-tips/docs/202309032358/tips_cloud9.html)
 
 AWS Cloud9上でのDeep Learning開発環境を構築するためのTips．CloudFormation templateを利用し，Deep Learning AMIからEC2インスタンスを作成後に，SSH環境のCloud9を構築する．
+
+## [AWS CodeWhispererが収集するデータについての調査内容](https://renya-kujirada.github.io/Infra-tips/docs/202309151938/tips_codewhisperer.html)
+
+CodeWhispererを業務適用しても，AWS側にコーディング内容が共有されないかどうかを調査した．
