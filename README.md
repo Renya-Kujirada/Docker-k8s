@@ -32,3 +32,5 @@ AWS Cloud9上でのDeep Learning開発環境を構築するためのTips．Cloud
 ## [AWS CodeWhispererが収集するデータについての調査内容](https://renya-kujirada.github.io/Infra-tips/docs/202309151938/tips_codewhisperer.html)
 
 CodeWhispererを業務適用しても，AWS側にコーディング内容が共有されないかどうかを調査した．
+
+## [VSCode Dev Containersを利用してEC2でML開発/FM検証する方法](https://renya-kujirada.github.io/Infra-tips/docs/202312311851/tips_remote_dev_on_ec2_with_vscode.html)
