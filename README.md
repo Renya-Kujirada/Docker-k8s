@@ -33,4 +33,6 @@ AWS Cloud9上でのDeep Learning開発環境を構築するためのTips．Cloud
 
 CodeWhispererを業務適用しても，AWS側にコーディング内容が共有されないかどうかを調査した．
 
-## [VSCode Dev Containersを利用してEC2でML開発/FM検証する方法](https://renya-kujirada.github.io/Infra-tips/docs/202312311851/tips_remote_dev_on_ec2_with_vscode.html)
+## [VSCode Dev Containers を利用した AWS EC2 上での開発環境構築手順](https://renya-kujirada.github.io/Infra-tips/docs/202312311851/tips_remote_dev_on_ec2_with_vscode.html)
+
+VSCode Remote SSHを利用してEC2にログインし，AWS Deep Learning Containers Imagesをベースに Dev Containers上でML開発，FM実行する際のTips．
