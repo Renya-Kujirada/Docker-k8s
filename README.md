@@ -46,5 +46,6 @@ AWS上で開発する際，社内プロキシ等が原因でVSCodeから容易�
 本Tipsは，EC2上でのSageMaker Pipelineの開発やSageMaker Training Jobの実行のみならず，HuggingFace等の多様なFMを推論するための環境を，
 EC2上のコンテナにクイックに構築したいケースにも利用できます！（特に，SageMaker Jumpstartで提供されていないモデルを実行する際などにはオススメです！）
 
-なお，[本リポジトリ](https://github.com/Renya-Kujirada/aws-ec2-devkit-vscode)では，開発チームにメンバ全員に導入することを主眼としており，丁寧に解説しております．
+なお，[本リポジトリ](https://github.com/Renya-Kujirada/aws-ec2-devkit-vscode)では，開発チームメンバ全員に導入することを主眼としており，丁寧に解説しております．
+
 本Tipsがどなたかのお役に立てれば幸いです．
