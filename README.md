@@ -35,4 +35,16 @@ CodeWhispererを業務適用しても，AWS側にコーディング内容が共�
 
 ## [VSCode Dev Containers を利用した AWS EC2 上での開発環境構築手順](https://renya-kujirada.github.io/Infra-tips/docs/202312311851/tips_remote_dev_on_ec2_with_vscode.html)
 
-VSCode Remote SSHを利用してEC2にログインし，AWS Deep Learning Containers Imagesをベースに Dev Containers上でML開発，FM実行する際のTips．
+AWS上で開発する際，社内プロキシ等が原因でVSCodeから容易にRemote SSHできず，開発IDEとしてVSCodeを利用できない事例を多数見てきました．
+これにより，チーム開発時に，各メンバが異なるIDE（異なるLinter, Formatter）を利用する結果，チームとしての開発効率が低下する課題がございました．
+そこで，以下のTipsを整理し，[本リポジトリ](https://github.com/Renya-Kujirada/aws-ec2-devkit-vscode)にまとめました．
+
+- SSM経由でVSCodeからEC2にセキュアにSSH接続する方法
+- チーム開発時のIDEとしてVSCodeを利用し，Flake8，Black，Mypyを共通的に利用する方法
+- AWS Deep Learning Containers Images をベースに Dev Containers上で開発するための方法
+
+本Tipsは，EC2上でのSageMaker Pipelineの開発やSageMaker Training Jobの実行のみならず，HuggingFace等の多様なFMを推論するための環境を，
+EC2上のコンテナにクイックに構築したいケースにも利用できます！（特に，SageMaker Jumpstartで提供されていないモデルを実行する際などにはオススメです！）
+
+なお，[本リポジトリ](https://github.com/Renya-Kujirada/aws-ec2-devkit-vscode)では，開発チームにメンバ全員に導入することを主眼としており，丁寧に解説しております．
+本Tipsがどなたかのお役に立てれば幸いです．
