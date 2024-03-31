@@ -49,3 +49,11 @@ EC2上のコンテナにクイックに構築したいケースにも利用で�
 なお，[本リポジトリ](https://github.com/Renya-Kujirada/aws-ec2-devkit-vscode)では，開発チームメンバ全員に導入することを主眼としており，丁寧に解説しております．
 
 本Tipsがどなたかのお役に立てれば幸いです．
+
+## [SageMaker Training Job Template](https://renya-kujirada.github.io/Infra-tips/docs/202403312357/tips_sagemaker_training_job.mdips_sagemaker_training_job.html)
+
+昨今，AWS Bedrockなどで生成AIの利用が活発化しておりますが，業務などのPoCにおいて，機械学習を利用するケースはまだ多い印象があります．特に，PoCで様々なハイパーパラメーターの設定で実験を行う場合，SageMaker Training JobとSageMaker Experimentsを利用した実験管理・学習実行が非常に有効です． 
+
+しかし，これらを実際のPoCなどで迅速に利用可能な実装例・テンプレートは多いとは言えず，特に，Pythonスクリプトベースの実装例などは少ないと感じました．（AWS公式リポジトリには沢山Jupyter Notebookでの解説実装はございます）  
+
+そこで，実務や Kaggle での SageMaker の利用経験を基に，ローカルで開発した機械学習コードをスムーズにSageMaker Training Jobで利用可能なテンプレートを作成しました．私のこれまでのSageMakerのナレッジ・運用ノウハウを全て詰め込んだテンプレート・ドキュメントを作成できたと自負しておりますので，是非ご覧いただければ幸いです．
