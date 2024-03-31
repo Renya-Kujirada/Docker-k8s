@@ -50,7 +50,7 @@ EC2上のコンテナにクイックに構築したいケースにも利用で�
 
 本Tipsがどなたかのお役に立てれば幸いです．
 
-## [SageMaker Training Job Template](https://renya-kujirada.github.io/Infra-tips/docs/202403312357/tips_sagemaker_training_job.mdips_sagemaker_training_job.html)
+## [SageMaker Training Job Template](https://renya-kujirada.github.io/Infra-tips/docs/202403312357/tips_sagemaker_training_job.html)
 
 昨今，AWS Bedrockなどで生成AIの利用が活発化しておりますが，業務などのPoCにおいて，機械学習を利用するケースはまだ多い印象があります．特に，PoCで様々なハイパーパラメーターの設定で実験を行う場合，SageMaker Training JobとSageMaker Experimentsを利用した実験管理・学習実行が非常に有効です． 
 
