@@ -6,12 +6,11 @@
 
 ## TL;DR <!-- omit in toc -->
 
-SageMaker Training Job を実行可能なコードテンプレートを Python コードベースで作成した．本テンプレートを利用することで，以下の機能を迅速かつ容易に利用することができる．
+ローカルで開発した機械学習コードを Training Job で容易に実行するためのテンプレートを作成した．本テンプレートを利用することで，以下の機能を迅速かつ容易に利用することができる．
 
 - SageMaker Training Job の実行（オプション指定可能）
 - SageMaker Experiments を利用した実験管理
 - Training Job 実行後，モデルおよびログの自動ダウンロード
-
 ## 目次 <!-- omit in toc -->
 
 - [背景と課題](#背景と課題)
