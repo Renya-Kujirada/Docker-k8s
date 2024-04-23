@@ -128,4 +128,47 @@ Claude3 は，，，
 - [LLM RAG Paradigms: Naive RAG, Advanced RAG & Modular RAG](https://medium.com/@drjulija/what-are-naive-rag-advanced-rag-modular-rag-paradigms-edff410c202e)
 - [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997)
 - [LangChain×Bedrock(実装の参考になりそう)](https://twitter.com/cyber__BOSE/status/1782246450770137301)
+- [Python 約 30 行で作る Bedrock x Claude3 の Streaming チャットアプリ](https://qiita.com/cyberBOSE/items/cfaadabe2dd85039a740?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 - [Bedrock(Claude 3)対応のマルチモーダルチャットボットを Chainlit と LangChain(LCEL)で構築する](https://qiita.com/hayao_k/items/a3f7a893e4f6b71dc0b7?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
+
+## その他(公式ドキュメント)
+
+### 機能リリース watching には良い
+
+- https://docs.aws.amazon.com/bedrock/latest/userguide/doc-history.html
+
+## その他(公式リポジトリ，workshop)
+
+### 良さそう
+
+- [Amazon Q Business workshop (Innovate on enterprise data with generative AI & Amazon Q Business application)](https://catalog.workshops.aws/amazon-q-business/en-US)
+- [Knowledge Bases for Amazon Bedrock Workshop](https://github.com/aws-samples/amazon-bedrock-workshop)
+  - バックエンドとしては OpenSearch Serverless, RDS, Redis Enterpise Cloud, Pinecone が使える
+- [Rag Architecture using Amazon Bedrock and OpenSearch](https://github.com/aws-samples/rag-using-langchain-amazon-bedrock-and-opensearch)
+
+### memo
+
+- https://github.com/aws-samples/jp-rag-sample
+- https://github.com/aws-samples/amazon-bedrock-rag-workshop
+- https://catalog.us-east-1.prod.workshops.aws/workshops/6708bce5-6aa3-4acb-89f7-85c39c006c8c/en-US
+- https://github.com/aws-samples/generative-ai-use-cases-jp
+
+## その他(最近の機能リリース)
+
+### 2024/04/23
+
+- Bedrock Agent で Claude3(Haiku/Sonnet)がサポート
+- Bedrock Knowledge Base のデータソースが複数選択可能に
+- Knowledge Base の設定無しに，Chat でドキュメントをアップロードしてそのドキュメントを踏まえてチャット可能に
+  - File types: PDF, MD, TXT, DOC, DOCX, HTML, CSV, XLS, XLSX (Max. 10 MB)
+- Bedrock Agent のアクショングループを定義可能に
+- SageMaker などで学習したカスタムモデルを Bedrock で import 可能に
+- Bedrock で Llama 3 が利用可能に(バージニアとオレゴンのみ？)
+
+  - meta.llama3-8b-instruct-v1:0
+  - meta.llama3-70b-instruct-v1:0
+
+- source:
+  - https://docs.aws.amazon.com/bedrock/latest/userguide/doc-history.html
+  - https://docs.aws.amazon.com/ja_jp/bedrock/latest/userguide/agents-action-create.html
+  - https://x.com/hedgehog051/status/1782657633432006794
