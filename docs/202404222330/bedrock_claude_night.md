@@ -198,4 +198,5 @@ Claude3 は，，，
 
 - [Document history for the Amazon Bedrock User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/doc-history.html)
 - [AWS News Blog](https://aws.amazon.com/jp/blogs/aws/)
+- [Significant new capabilities make it easier to use Amazon Bedrock to build and scale generative AI applications – and achieve impressive results](https://aws.amazon.com/jp/blogs/machine-learning/new-capabilities-make-it-easier-to-use-amazon-bedrock-to-build-and-scale-generative-ai-applications-and-deliver-impact/)
 - [2024/4/23 Amazon Bedrock アップデート祭りメモ](https://qiita.com/hayao_k/items/3f08113c0ea56c4699aa?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
