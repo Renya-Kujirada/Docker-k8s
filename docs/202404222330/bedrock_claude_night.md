@@ -4,6 +4,7 @@
 
 - [Bedrock Claude Night（JAWS-UG AI/ML 支部 × 東京支部コラボ）](https://youtube.com/live/Aspb-QF3iDU)
 - [Anthropic Keynote Session in JAWS Bedrock Claude Night on 2024/4/22](https://www.youtube.com/watch?v=yJg-SK9KkHg)
+- [slide all](https://jawsug-ai.connpass.com/event/313318/presentation/)
 
 ## Anthropic キーノートセッション
 
@@ -117,11 +118,15 @@ Claude3 は，，，
 - Claude のメッセージを一部予め埋め込むのも良い(そうすると途中から喋ってくれる)
 - 長いコンテキストに対応する場合，ドキュメントや画像などは先頭に近い位置に配置し，タスクがどのようなものになるか，少しコンテキストを持たせると良い
   - 後ろの部分で指示や例を書く．
+- 言ってることは以下に似ている
+  - [指示とデータの分離及び構造化](https://x.com/kazuneet/status/1781916223376388350)
+  - [指示は最後に持ってきたほうが聞いてくれる感じあるので、データの中に指示を埋もれさせないためにタグ使うのは有効](https://x.com/tmokmss/status/1781922172627546377)
 
 ## その他(参考になるリンク)
 
 - [AWS の生成 AI で社内文書検索！ Bedrock のナレッジベースで簡単に RAG アプリを作ってみよう](https://qiita.com/minorun365/items/24dfb0ea3afde6ed0a56)
 - [AWS の生成 AI 最新機能ハンズオン！Bedrock の Knowledge Base と Agents に入門しよう](https://qiita.com/minorun365/items/86a3667290a8e5657f65)
+- [AWS 入門ブログリレー 2024〜Agents for Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-agents-for-amazon-bedrock/)
 - [AWS 入門ブログリレー 2024 〜Knowledge bases for Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-knowledge-bases-for-amazon-bedrock/)
 - [AWS 入門ブログリレー 2024〜Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-aws-bedrock/)
 - [AWS Marketplace の Pinecone を Amazon Bedrock のナレッジベースとして利用する](https://aws.amazon.com/jp/blogs/news/leveraging-pinecone-on-aws-marketplace-as-a-knowledge-base-for-amazon-bedrock/)
@@ -129,13 +134,16 @@ Claude3 は，，，
 - [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997)
 - [LangChain×Bedrock(実装の参考になりそう)](https://twitter.com/cyber__BOSE/status/1782246450770137301)
 - [Python 約 30 行で作る Bedrock x Claude3 の Streaming チャットアプリ](https://qiita.com/cyberBOSE/items/cfaadabe2dd85039a740?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
+- [【Bedrock×Lambda】高精度なハイブリッド検索 RAG をサーバレスで実装（Slack 連携も可）](https://qiita.com/Naoki_Ishihara/items/662d70a9bd0dc3a8c9ce?utm_content=buffer0581a&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 - [Bedrock(Claude 3)対応のマルチモーダルチャットボットを Chainlit と LangChain(LCEL)で構築する](https://qiita.com/hayao_k/items/a3f7a893e4f6b71dc0b7?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
+
+---
 
 ## その他(公式ドキュメント)
 
 ### 機能リリース watching には良い
 
-- https://docs.aws.amazon.com/bedrock/latest/userguide/doc-history.html
+- [Document history for the Amazon Bedrock User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/doc-history.html)
 
 ## その他(公式リポジトリ，workshop)
 
@@ -148,6 +156,8 @@ Claude3 は，，，
 
 ### memo
 
+- https://github.com/aws-samples/amazon-bedrock-samples
+- https://github.com/aws-samples/amazon-bedrock-samples/tree/main/knowledge-bases
 - https://github.com/aws-samples/jp-rag-sample
 - https://github.com/aws-samples/amazon-bedrock-rag-workshop
 - https://catalog.us-east-1.prod.workshops.aws/workshops/6708bce5-6aa3-4acb-89f7-85c39c006c8c/en-US
@@ -155,20 +165,37 @@ Claude3 は，，，
 
 ## その他(最近の機能リリース)
 
+### 2024/04/24
+
+- [Bedrock で Cohere Command R+が利用可能になる予定](https://twitter.com/ajassy/status/1782879689369149773)
+
 ### 2024/04/23
+
+#### feature
 
 - Bedrock Agent で Claude3(Haiku/Sonnet)がサポート
 - Bedrock Knowledge Base のデータソースが複数選択可能に
 - Knowledge Base の設定無しに，Chat でドキュメントをアップロードしてそのドキュメントを踏まえてチャット可能に
   - File types: PDF, MD, TXT, DOC, DOCX, HTML, CSV, XLS, XLSX (Max. 10 MB)
-- Bedrock Agent のアクショングループを定義可能に
-- SageMaker などで学習したカスタムモデルを Bedrock で import 可能に
-- Bedrock で Llama 3 が利用可能に(バージニアとオレゴンのみ？)
+- [Bedrock Agent のアクショングループを定義可能に](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-how.html)
+- [SageMaker などで学習したカスタムモデルを Bedrock で import 可能(preview)](https://aws.amazon.com/jp/blogs/aws/import-custom-models-in-amazon-bedrock-preview/)
+  - Llama2/3、Mistral ベースのモデルを import し API 形式で利用可能
+- [Guardrails for Bedrock が利用可能に](https://aws.amazon.com/jp/blogs/aws/guardrails-for-amazon-bedrock-now-available-with-new-safety-filters-and-privacy-controls/)
+  - 安全フィルターおよびプライバシー制御（マスキング）機能
+  - FT したモデルにも適用可能
+- [Agents for Amazon Bedrock: 簡素化された作成と構成エクスペリエンスの導入](https://aws.amazon.com/jp/blogs/aws/agents-for-amazon-bedrock-introducing-a-simplified-creation-and-configuration-experience/)
+  - OpenAPI スキーマ(Agent が呼び出すことのできる API 操作の定義)が不要に．
 
+#### model
+
+- [Amazon Titan Image Generator が GA](https://aws.amazon.com/jp/blogs/aws/amazon-titan-image-generator-and-watermark-detection-api-are-now-available-in-amazon-bedrock/)
+- [Bedrock で Llama 3 が利用可能に(バージニアとオレゴンのみ)](https://aws.amazon.com/jp/blogs/aws/metas-llama-3-models-are-now-available-in-amazon-bedrock/)
   - meta.llama3-8b-instruct-v1:0
   - meta.llama3-70b-instruct-v1:0
+- [Amazon Titan Text Embeddings V2 が近日提供予定](https://aws.amazon.com/jp/blogs/machine-learning/new-capabilities-make-it-easier-to-use-amazon-bedrock-to-build-and-scale-generative-ai-applications-and-deliver-impact/)
 
-- source:
-  - https://docs.aws.amazon.com/bedrock/latest/userguide/doc-history.html
-  - https://docs.aws.amazon.com/ja_jp/bedrock/latest/userguide/agents-action-create.html
-  - https://x.com/hedgehog051/status/1782657633432006794
+#### source:
+
+- [Document history for the Amazon Bedrock User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/doc-history.html)
+- [AWS News Blog](https://aws.amazon.com/jp/blogs/aws/)
+- [2024/4/23 Amazon Bedrock アップデート祭りメモ](https://qiita.com/hayao_k/items/3f08113c0ea56c4699aa?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
