@@ -127,7 +127,7 @@ Claude3 は，，，
 - [AWS の生成 AI で社内文書検索！ Bedrock のナレッジベースで簡単に RAG アプリを作ってみよう](https://qiita.com/minorun365/items/24dfb0ea3afde6ed0a56)
 - [AWS の生成 AI 最新機能ハンズオン！Bedrock の Knowledge Base と Agents に入門しよう](https://qiita.com/minorun365/items/86a3667290a8e5657f65)
 - [AWS 入門ブログリレー 2024〜Agents for Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-agents-for-amazon-bedrock/)
-- [AWS 入門ブログリレー 2024 〜Knowledge bases for Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-knowledge-bases-for-amazon-bedrock/)
+- [AWS 入門ブログリレー 2024〜Knowledge bases for Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-knowledge-bases-for-amazon-bedrock/)
 - [AWS 入門ブログリレー 2024〜Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-aws-bedrock/)
 - [AWS Marketplace の Pinecone を Amazon Bedrock のナレッジベースとして利用する](https://aws.amazon.com/jp/blogs/news/leveraging-pinecone-on-aws-marketplace-as-a-knowledge-base-for-amazon-bedrock/)
 - [LLM RAG Paradigms: Naive RAG, Advanced RAG & Modular RAG](https://medium.com/@drjulija/what-are-naive-rag-advanced-rag-modular-rag-paradigms-edff410c202e)
@@ -136,32 +136,52 @@ Claude3 は，，，
 - [Python 約 30 行で作る Bedrock x Claude3 の Streaming チャットアプリ](https://qiita.com/cyberBOSE/items/cfaadabe2dd85039a740?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 - [【Bedrock×Lambda】高精度なハイブリッド検索 RAG をサーバレスで実装（Slack 連携も可）](https://qiita.com/Naoki_Ishihara/items/662d70a9bd0dc3a8c9ce?utm_content=buffer0581a&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 - [Bedrock(Claude 3)対応のマルチモーダルチャットボットを Chainlit と LangChain(LCEL)で構築する](https://qiita.com/hayao_k/items/a3f7a893e4f6b71dc0b7?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
+- [【検証してみた】Amazon Bedrock のナレッジベースにおける日本語性能を向上させる技術検証](https://www.fsi.co.jp/blog/10661/)
 
 ---
 
 ## その他(公式ドキュメント)
 
-### 機能リリース watching には良い
+### 機能リリース watching
 
 - [Document history for the Amazon Bedrock User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/doc-history.html)
 
-## その他(公式リポジトリ，workshop)
+---
 
-### 良さそう
+## 公式リポジトリ/workshop
+
+### Bedrock
+
+- [amazon-bedrock-samples](https://github.com/aws-samples/amazon-bedrock-samples)
+- [generative-ai-use-cases-jp](https://github.com/aws-samples/generative-ai-use-cases-jp)
+
+### RAG
+
+#### Knowledge Base(オススメ)
+
+- [Knowledge Bases for Amazon Bedrock Workshop(オススメ)](https://github.com/aws-samples/amazon-bedrock-workshop)
+  - バックエンドとしては OpenSearch Serverless, RDS, Redis Enterpise Cloud, Pinecone が使える
+- [Rag Architecture using Amazon Bedrock and OpenSearch(オススメ)](https://github.com/aws-samples/rag-using-langchain-amazon-bedrock-and-opensearch)
+- [amazon-bedrock-samples-knowledge-base](https://github.com/aws-samples/amazon-bedrock-samples/tree/main/knowledge-bases)
+
+#### Kendra
+
+- [jp-rag-sample](https://github.com/aws-samples/jp-rag-sample)
+- [Amazon Kendra を利用した Retrieval Augmented Generation (RAG) ハンズオン](https://catalog.us-east-1.prod.workshops.aws/workshops/6708bce5-6aa3-4acb-89f7-85c39c006c8c/en-US)
+
+#### Llamaindex
+
+- https://github.com/aws-samples/amazon-bedrock-rag-workshop
+
+### Amazon Q
 
 - [Amazon Q Business workshop (Innovate on enterprise data with generative AI & Amazon Q Business application)](https://catalog.workshops.aws/amazon-q-business/en-US)
-- [Knowledge Bases for Amazon Bedrock Workshop](https://github.com/aws-samples/amazon-bedrock-workshop)
-  - バックエンドとしては OpenSearch Serverless, RDS, Redis Enterpise Cloud, Pinecone が使える
-- [Rag Architecture using Amazon Bedrock and OpenSearch](https://github.com/aws-samples/rag-using-langchain-amazon-bedrock-and-opensearch)
 
-### memo
+### LangChain
 
-- https://github.com/aws-samples/amazon-bedrock-samples
-- https://github.com/aws-samples/amazon-bedrock-samples/tree/main/knowledge-bases
-- https://github.com/aws-samples/jp-rag-sample
-- https://github.com/aws-samples/amazon-bedrock-rag-workshop
-- https://catalog.us-east-1.prod.workshops.aws/workshops/6708bce5-6aa3-4acb-89f7-85c39c006c8c/en-US
-- https://github.com/aws-samples/generative-ai-use-cases-jp
+- [LangChain を用いた 4 種類の RAG 質問応答 chain の実装と性能比較](https://zenn.dev/aidemy/articles/97d5fb6ac03a4f)
+
+---
 
 ## その他(最近の機能リリース)
 
@@ -199,4 +219,41 @@ Claude3 は，，，
 - [Document history for the Amazon Bedrock User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/doc-history.html)
 - [AWS News Blog](https://aws.amazon.com/jp/blogs/aws/)
 - [Significant new capabilities make it easier to use Amazon Bedrock to build and scale generative AI applications – and achieve impressive results](https://aws.amazon.com/jp/blogs/machine-learning/new-capabilities-make-it-easier-to-use-amazon-bedrock-to-build-and-scale-generative-ai-applications-and-deliver-impact/)
+- [Building scalable, secure, and reliable RAG applications using Knowledge Bases for Amazon Bedrock](https://aws.amazon.com/jp/blogs/machine-learning/building-scalable-secure-and-reliable-rag-applications-using-knowledge-bases-for-amazon-bedrock/)
 - [2024/4/23 Amazon Bedrock アップデート祭りメモ](https://qiita.com/hayao_k/items/3f08113c0ea56c4699aa?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
+
+---
+
+## 公式ブログ(LLMOps)
+
+- [Enhance conversational AI with advanced routing techniques with Amazon Bedrock](https://aws.amazon.com/jp/blogs/machine-learning/enhance-conversational-ai-with-advanced-routing-techniques-with-amazon-bedrock/)
+  - Agent for Amazon Bedrock，または LangChain でアプリケーションを実装する際のメリデメを述べている．
+  - アーキテクチャ例も提示されており，参考になりそう．
+- [Evaluate the text summarization capabilities of LLMs for enhanced decision-making on AWS](https://aws.amazon.com/jp/blogs/machine-learning/evaluate-the-text-summarization-capabilities-of-llms-for-enhanced-decision-making-on-aws/)
+  - LLM による要約出力の評価方法について述べている
+- [Amazon Bedrock のカスタムモデルを使用して Amazon Titan Image Generator G1 モデルをファインチューニングする](https://aws.amazon.com/jp/blogs/news/fine-tune-your-amazon-titan-image-generator-g1-model-using-amazon-bedrock-model-customization/)
+  - Bedrock 上のモデルを FT する際の仕組みがわかりやすく解説されている．
+  - データセットは外部に保存されることはなく，モデルの改善に利用されることは無い．
+- [FMOps/LLMOps：生成系 AI の運用と MLOps との違い](https://aws.amazon.com/jp/blogs/news/fmops-llmops-operationalize-generative-ai-and-differences-with-mlops/)
+  - FMOps におけるモデルの選定・ファインチューニング・評価の方法論が述べられている．
+  - モデル評価時にはプロンプトカタログという評価用のテンプレートプロンプト集を利用しているのが興味深い
+
+---
+
+<details>
+<summary>※BlackBeltの資料など</summary>
+<br/>
+
+- [Amazon OpenSearch Serverless の基礎](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_AmazonOpenSearchServerless_0131_v1.pdf)
+- [Amazon OpenSearch Service の基礎](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_Amazon-OpenSearch-Service-Basic_0131_v1.pdf)
+
+- https://aws.amazon.com/jp/blogs/news/2023-01-aws-blackbelt/
+
+- https://aws.amazon.com/jp/blogs/news/amazon-opensearch-services-vector-database-capabilities-explained/
+
+- https://aws.amazon.com/jp/blogs/news/log-analytics-the-easy-way-with-amazon-opensearch-serverless/
+
+- https://pages.awscloud.com/rs/112-TZM-766/images/20231005-Analytics-03-AWS.pdf
+
+</details>
+<br/>
