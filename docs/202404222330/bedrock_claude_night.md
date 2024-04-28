@@ -126,6 +126,7 @@ Claude3 は，，，
 
 - [AWS の生成 AI で社内文書検索！ Bedrock のナレッジベースで簡単に RAG アプリを作ってみよう](https://qiita.com/minorun365/items/24dfb0ea3afde6ed0a56)
 - [AWS の生成 AI 最新機能ハンズオン！Bedrock の Knowledge Base と Agents に入門しよう](https://qiita.com/minorun365/items/86a3667290a8e5657f65)
+- [[アップデート] 有害・危険なコンテンツをブロックする「Guardrails for Amazon Bedrock」が GA になりました！](https://dev.classmethod.jp/articles/guardrails-for-amazon-bedrock-general-availability/)
 - [AWS 入門ブログリレー 2024〜Agents for Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-agents-for-amazon-bedrock/)
 - [AWS 入門ブログリレー 2024〜Knowledge bases for Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-knowledge-bases-for-amazon-bedrock/)
 - [AWS 入門ブログリレー 2024〜Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-aws-bedrock/)
@@ -137,6 +138,12 @@ Claude3 は，，，
 - [【Bedrock×Lambda】高精度なハイブリッド検索 RAG をサーバレスで実装（Slack 連携も可）](https://qiita.com/Naoki_Ishihara/items/662d70a9bd0dc3a8c9ce?utm_content=buffer0581a&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 - [Bedrock(Claude 3)対応のマルチモーダルチャットボットを Chainlit と LangChain(LCEL)で構築する](https://qiita.com/hayao_k/items/a3f7a893e4f6b71dc0b7?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 - [【検証してみた】Amazon Bedrock のナレッジベースにおける日本語性能を向上させる技術検証](https://www.fsi.co.jp/blog/10661/)
+- [RAG の性能を改善するための 8 つの戦略](https://fintan.jp/page/10301/)
+  - 性能改善については主に検索側と生成側から取り組む必要があるが，本記事では検索側に焦点を当てて解説している
+- [RAG の実装戦略まとめ](https://qiita.com/jw-automation/items/045917be7b558509fdf2)
+- [Agents for Amazon Bedrock の作成がより簡単になった！](https://acro-engineer.hatenablog.com/entry/2024/04/26/102947)
+- [Agents for Amazon Bedrock の "ユーザー入力" を CloudFromation で有効にする](https://zenn.dev/akring/articles/1dbd1a3d6b1cf1)
+- [[アップデート]Knowledge bases for Amazon Bedrock で複数データソースがサポートされました](https://dev.classmethod.jp/articles/knowledge-bases-for-amazon-bedrock-multiple-data-sources/)
 
 ---
 
@@ -234,6 +241,9 @@ Claude3 は，，，
 - [Amazon Bedrock のカスタムモデルを使用して Amazon Titan Image Generator G1 モデルをファインチューニングする](https://aws.amazon.com/jp/blogs/news/fine-tune-your-amazon-titan-image-generator-g1-model-using-amazon-bedrock-model-customization/)
   - Bedrock 上のモデルを FT する際の仕組みがわかりやすく解説されている．
   - データセットは外部に保存されることはなく，モデルの改善に利用されることは無い．
+- [Amazon Bedrock で手軽に絵芝居を作れるシステムを開発してみた](https://aws.amazon.com/jp/builders-flash/202404/bedrock-eshibai-generation/?sc_channel=em&sc_campaign=builders_flash_mail_202404&sc_publisher=aws&sc_medium=em_builders_flash_mail_202404&sc_content=devadopt_ot_prodadp&sc_country=jp&sc_geo=japn&sc_outcome=devadopt&trkCampaign=builders_flash_mail_202404&trk=em_builders_flash_mail_202404&mkt_tok=MTEyLVRaTS03NjYAAAGSN5WeF-HRKm0ePEcbU52YS5IXFd9GVMIHo-CjEggVmGIeCCCQRS212JFSlaOVCRP8ahr45hxqD0GiCRTbwzjXt0H0H32s8Pw25kwkIKCzEzJ_fI7YX0Ox&awsf.filter-name=*all)
+  - プロンプトチェーンを利用した具体例
+  - [stability.ai のプロンプトガイド](https://beta.dreamstudio.ai/prompt-guide)も紹介されている
 - [FMOps/LLMOps：生成系 AI の運用と MLOps との違い](https://aws.amazon.com/jp/blogs/news/fmops-llmops-operationalize-generative-ai-and-differences-with-mlops/)
   - FMOps におけるモデルの選定・ファインチューニング・評価の方法論が述べられている．
   - モデル評価時にはプロンプトカタログという評価用のテンプレートプロンプト集を利用しているのが興味深い
@@ -244,16 +254,22 @@ Claude3 は，，，
 <summary>※BlackBeltの資料など</summary>
 <br/>
 
-- [Amazon OpenSearch Serverless の基礎](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_AmazonOpenSearchServerless_0131_v1.pdf)
-- [Amazon OpenSearch Service の基礎](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_Amazon-OpenSearch-Service-Basic_0131_v1.pdf)
-
-- https://aws.amazon.com/jp/blogs/news/2023-01-aws-blackbelt/
-
-- https://aws.amazon.com/jp/blogs/news/amazon-opensearch-services-vector-database-capabilities-explained/
-
-- https://aws.amazon.com/jp/blogs/news/log-analytics-the-easy-way-with-amazon-opensearch-serverless/
-
-- https://pages.awscloud.com/rs/112-TZM-766/images/20231005-Analytics-03-AWS.pdf
+- [Amazon OpenSearch Serverless AWS Black Belt Online Seminar](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_AmazonOpenSearchServerless_0131_v1.pdf)
+- [Amazon OpenSearch Service AWS Black Belt Online Semina](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_Amazon-OpenSearch-Service-Basic_0131_v1.pdf)
+- [Amazon OpenSearch Service 機能解説 – 検索編 AWS Black Belt Online Seminar](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_Amazon-OpenSearch-Service-Advanced-Search_0131_v1.pdf)
+- [Amazon OpenSearch Service のベクトルデータベース機能の説明](https://aws.amazon.com/jp/blogs/news/amazon-opensearch-services-vector-database-capabilities-explained/)
+- [OpenSearch を使⽤したベクトル検索](https://pages.awscloud.com/rs/112-TZM-766/images/20231005-Analytics-03-AWS.pdf)
+- [Amazon OpenSearch Serverless による手軽なログ分析](https://aws.amazon.com/jp/blogs/news/log-analytics-the-easy-way-with-amazon-opensearch-serverless/)
+- [2023 年 1 月の AWS Black Belt オンラインセミナー資料及び動画公開のご案内](https://aws.amazon.com/jp/blogs/news/2023-01-aws-blackbelt/)
 
 </details>
 <br/>
+
+## ※見ていくべき技術スタック
+
+- Knowledge Base(RAG)
+- Advanced RAG
+- Agents
+- LangChain
+- security(Guardrails)
+- backup(opensearch の自動スナップショットなど)
