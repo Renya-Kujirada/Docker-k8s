@@ -62,3 +62,9 @@ EC2 上のコンテナにクイックに構築したいケースにも利用で�
 ## [Bedrock Claude Night（JAWS-UG AI/ML 支部 × 東京支部コラボ）の個人メモ](https://ren8k.github.io/Infra-tips/docs/202404222330/bedrock_claude_night.html)
 
 大変参考になったので自分用にメモしました．
+
+## [RAG Survey](https://ren8k.github.io/Infra-tips/docs/202404222330/bedrock_claude_night.html)
+
+RAG についての調査メモです．
+
+## [Knowledge Bases for Amazon Bedrock を利用した RAG のベースライン](https://ren8k.github.io/Infra-tips/docs/202405021217/aws_bedrock_rag_baseline.html)
