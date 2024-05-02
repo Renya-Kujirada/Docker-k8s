@@ -49,6 +49,7 @@ Claude3 は，，，
 
 - API 利用時はリトライ機構が大事
   - 指数バックオフ機構（1 回につき 2^(retry_count - 1)遅らせる）
+  - [retry decorator](https://github.com/aws-samples/amazon-bedrock-workshop/blob/main/02_KnowledgeBases_and_RAG/0_create_ingest_documents_test_kb.ipynb) を使うと良いかも？
 - Bedrock を利用するリージョンを分散すると良い
 - 予算があればプロビジョンドスループットを購入すると良い
   - 1 ヶ月単位で購入
@@ -144,6 +145,10 @@ Claude3 は，，，
 - [Agents for Amazon Bedrock の作成がより簡単になった！](https://acro-engineer.hatenablog.com/entry/2024/04/26/102947)
 - [Agents for Amazon Bedrock の "ユーザー入力" を CloudFromation で有効にする](https://zenn.dev/akring/articles/1dbd1a3d6b1cf1)
 - [[アップデート]Knowledge bases for Amazon Bedrock で複数データソースがサポートされました](https://dev.classmethod.jp/articles/knowledge-bases-for-amazon-bedrock-multiple-data-sources/)
+- [Anthropic Claude - Prompt Design 大全](https://qiita.com/kiiwami/items/4a62a3dcbedeb141e605)
+- [【Command R+】オープンソース界最強 LLM が GPT-4 レベルの性能を達成](https://weel.co.jp/media/tech/command-r-plus/)
+  - Cohere のトークンナイザは日本語に最適化されており，[Claude に比べると約 1.7 分の 1 程度のトークン数](https://x.com/Ishihara_Naok1/status/1785102407556595896)となる
+  - コンテキストウィンドウが 128K?
 
 ---
 
@@ -255,6 +260,7 @@ Claude3 は，，，
 <br/>
 
 - [Amazon OpenSearch Serverless AWS Black Belt Online Seminar](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_AmazonOpenSearchServerless_0131_v1.pdf)
+  - コレクション > インデックス > ドキュメントの概念がある
 - [Amazon OpenSearch Service AWS Black Belt Online Semina](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_Amazon-OpenSearch-Service-Basic_0131_v1.pdf)
 - [Amazon OpenSearch Service 機能解説 – 検索編 AWS Black Belt Online Seminar](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_Amazon-OpenSearch-Service-Advanced-Search_0131_v1.pdf)
 - [Amazon OpenSearch Service のベクトルデータベース機能の説明](https://aws.amazon.com/jp/blogs/news/amazon-opensearch-services-vector-database-capabilities-explained/)
