@@ -63,7 +63,7 @@ EC2 上のコンテナにクイックに構築したいケースにも利用で�
 
 大変参考になったので自分用にメモしました．
 
-## [RAG Survey](https://ren8k.github.io/Infra-tips/docs/202404222330/bedrock_claude_night.html)
+## [RAG Survey](https://ren8k.github.io/Infra-tips/docs/202404281645/rag_survey.md)
 
 RAG についての調査メモです．
 
