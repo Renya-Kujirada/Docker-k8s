@@ -7,6 +7,23 @@
 - OpenSearch Serverless で Analyzer を設定している場合，各チャンクに対して Char Filter, Tokenizer, Token Filter が実行され，その後 Embedding が行われるのか？
 - Knowledge Base で自身で特有のチャンキング戦略を取りたい場合（例えば，LangChain の RecursiveCharacterTextSplitterplitter を利用して各パラグラフでチャンキングしたい場合など），事前に文書を前処理で split して s3 に保存しておく必要があるのか？
 
+  - [Zenn の記事](https://zenn.dev/kun432/scraps/c3d65c44e60755)では，QA の CSV ファイルの各行を別ファイルとして書き出している．
+
+## 疑問点（retrieve_and_generate の返り値について）
+
+`response = bedrock_agent_client.retrieve_and_generate`[1] の返り値につきまして，以下の違いをご教示いただきたいです．
+
+- (a) response['citations'][0]['generatedResponsePart']['textResponsePart']['text']
+- (b) response['output']['text']
+
+以下の公式ドキュメント[2][3]によると，(a)は「引用部を含む，生成されたテキスト（の一部？）」であり，(b)は「knowledge base のクエリから生成されたレスポンス」と明記されております．しかし，複数回`retrieve_and_generate`を実行しましたが，上記(a)と(b)は同値でした．こちらにつきまして，(a)と(b)の差分は無いのかどうかご教示いただけますと幸いです．
+
+よろしくお願いいたします．
+
+[1]: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html
+[2]: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateOutput.html#bedrock-Type-agent-runtime_RetrieveAndGenerateOutput-text
+[3]: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TextResponsePart.html#bedrock-Type-agent-runtime_TextResponsePart-text
+
 ## References
 
 ### Papers
@@ -33,3 +50,37 @@
 - [AWS 入門ブログリレー 2024〜Knowledge bases for Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-knowledge-bases-for-amazon-bedrock/)
 - [AWS Marketplace の Pinecone を Amazon Bedrock のナレッジベースとして利用する](https://aws.amazon.com/jp/blogs/news/leveraging-pinecone-on-aws-marketplace-as-a-knowledge-base-for-amazon-bedrock/)
 - [【検証してみた】Amazon Bedrock のナレッジベースにおける日本語性能を向上させる技術検証](https://www.fsi.co.jp/blog/10661/)
+- [Amazon Bedrock for Knowledge base を試す](https://zenn.dev/kun432/scraps/c3d65c44e60755)
+- [Knowledge Bases for Amazon Bedrock がハイブリッド検索をサポート](https://aws.amazon.com/jp/blogs/news/knowledge-bases-for-amazon-bedrock-now-supports-hybrid-search/)
+  - キーワード検索とセマンティック検索を組み合わせている
+
+### Agents for Amazon Bedrock Return of Control
+
+- [サンプルコードで理解する Agents for Amazon Bedrock の Return of Control](https://qiita.com/hayao_k/items/3478b43d73f576a591a1?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
+- [Agents for Amazon Bedrock の「Return of Control」機能の可能性を考察する](https://qiita.com/nasuvitz/items/2eb13a8b75e78cf11e8a)
+
+### custom library
+
+- [LangChain を使わない](https://tech-blog.abeja.asia/entry/advent-2023-day13)
+- [taikinman/langrila](https://github.com/taikinman/langrila)
+
+### Command R+
+
+- [Amazon Bedrock に Cohere Command R と Command R+ が来たよ！RAG がすげーよ！](https://qiita.com/moritalous/items/16797ea9d82295f40b5e)
+- [Cohere の Command R/R+ において 128k input tokens は短いのか長いのか](https://qiita.com/kazuneet/items/3958eb42f45e7a8b9072)
+- [Cohere Command R and Command R+ models](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-cohere-command-r-plus.html)
+- [Retrieval Augmented Generation (RAG)](https://docs.cohere.com/docs/retrieval-augmented-generation-rag)
+- [[アップデート] Amazon Bedrock で新モデル「Cohere Command R/R+」が利用可能になったので、RAG で使ってみた](https://dev.classmethod.jp/articles/amazon-bedrock-cohere-command-r-rag/)
+
+### Claude3
+
+- [Run scalable, enterprise-grade generative AI workloads with Cohere Command R & R+, now available in Amazon Bedrock](https://aws.amazon.com/jp/blogs/aws/run-scalable-enterprise-grade-generative-ai-workloads-with-cohere-r-r-now-available-in-amazon-bedrock/)
+- [Anthropic Claude Messages API](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-anthropic-claude-messages.html)
+
+### Amazon Titan Text V2
+
+- [Amazon Titan Text V2 now available in Amazon Bedrock, optimized for improving RAG](https://aws.amazon.com/jp/blogs/aws/amazon-titan-text-v2-now-available-in-amazon-bedrock-optimized-for-improving-rag/)
+
+### Amazon Q
+
+- [Amazon Q Business Application の設定方法（2024/5/1 更新）](https://qiita.com/Neville/items/8bc10b1b7a29faae1c6b)
