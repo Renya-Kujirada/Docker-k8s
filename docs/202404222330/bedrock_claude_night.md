@@ -20,6 +20,7 @@
   - 公式のコードや実装の例
 - [Claude user guide documentation](https://anthropic.com/docs)
   - プロンプトエンジニアリングの Tips
+- [Claude3 Technical Presentation](https://docs.google.com/presentation/d/e/2PACX-1vTOOynV_8_14nJZMBf4nDDikuF5aLH-2yzTAayBd9bEBgWB5J4WmwZ92fVziwEKROkhgpanN5E3vopI/pub?slide=id.g2c736259dac_63_0)
 
 ### メモ
 
