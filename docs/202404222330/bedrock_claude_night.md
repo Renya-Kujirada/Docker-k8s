@@ -4,6 +4,7 @@
 
 - [Bedrock Claude Night（JAWS-UG AI/ML 支部 × 東京支部コラボ）](https://youtube.com/live/Aspb-QF3iDU)
 - [Anthropic Keynote Session in JAWS Bedrock Claude Night on 2024/4/22](https://www.youtube.com/watch?v=yJg-SK9KkHg)
+- [後日公開版の動画](https://www.youtube.com/watch?v=bvHqJIlRM4g)
 - [slide all](https://jawsug-ai.connpass.com/event/313318/presentation/)
 
 ## Anthropic キーノートセッション

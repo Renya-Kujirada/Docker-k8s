@@ -30,6 +30,7 @@
   - Command R+を利用している．非常に参考になる
 
 - [LangChain への OpenAI の RAG 戦略の適用](https://note.com/npaka/n/n62cd25213679)
+- [RAG (検索拡張生成) のさまざまな手法 (パターン)](https://netweblog.wordpress.com/2023/11/08/llm-advanced-rag-methods/)
 
 ## Eval RAG
 
