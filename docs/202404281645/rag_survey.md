@@ -26,16 +26,18 @@
 - [Amazon Kendra と Amazon Bedrock で構成した RAG システムに対する Advanced RAG 手法の精度寄与検証](https://aws.amazon.com/jp/blogs/news/verifying-the-accuracy-contribution-of-advanced-rag-methods-on-rag-systems-built-with-amazon-kendra-and-amazon-bedrock/)
 - [Python 3.12 で増えた並列処理と、これまでの並列処理の挙動を比べてみる](https://qiita.com/ShotaOki/items/3198eb695e1c6aa8cdaa)
 - [【未経験者大歓迎】RAG 超入門：AWS が推奨する RAG を体験するハンズオン](https://qiita.com/moritalous/items/61f91039c13aeb9a51eb)
-
   - Command R+を利用している．非常に参考になる
-
 - [LangChain への OpenAI の RAG 戦略の適用](https://note.com/npaka/n/n62cd25213679)
 - [RAG (検索拡張生成) のさまざまな手法 (パターン)](https://netweblog.wordpress.com/2023/11/08/llm-advanced-rag-methods/)
+- [RAG の実案件に取り組んできた今までの知見をまとめてみた](https://dev.classmethod.jp/articles/rag-knowledge-on-real-projects/)
 
 ## Eval RAG
 
 - [Tweet](https://x.com/SnowGushiGit/status/1785901559735632146)
 - [openai/simple-evals](https://github.com/openai/simple-evals)
+- [LLM プロダクト開発における独自評価基準とデータセットの作り方の考察](https://zenn.dev/seya/articles/ba06e37d226182)
+- [LLM による LLM の評価とその評価の評価について](https://zenn.dev/seya/articles/b34345aab2949e)
+- [社内規程集について回答してくれる生成 AI を評価してみた〜生成 AI のアーキテクチャ「RAG」の評価プロセス](https://www.lac.co.jp/lacwatch/people/20240118_003651.html)
 
 ## Pinecone
 
@@ -55,6 +57,7 @@
   - キーワード検索とセマンティック検索を組み合わせている
 - [Amazon Bedrock、Amazon Aurora を組み合わせた RAG で回答精度の向上に取り組んでみた！① 概要編](https://qiita.com/Naoki_Ishihara/items/9f1b852917de19141847)
   - RAG の評価にも言及している
+- [RetrieveAndGenerate の sessionId パラメーターはセッション保持以外にクエリ書き換えも行ってくれる](https://dev.classmethod.jp/articles/retrieve-and-generate-sessionid-parameter-session-query-rewrite/)
 
 ## Agents for Amazon Bedrock Return of Control
 
@@ -78,6 +81,7 @@
 - [Cohere Command R and Command R+ models](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-cohere-command-r-plus.html)
 - [Retrieval Augmented Generation (RAG)](https://docs.cohere.com/docs/retrieval-augmented-generation-rag)
 - [[アップデート] Amazon Bedrock で新モデル「Cohere Command R/R+」が利用可能になったので、RAG で使ってみた](https://dev.classmethod.jp/articles/amazon-bedrock-cohere-command-r-rag/)
+- [Amazon Bedrock で Cohere Command のプロンプトの奥地に迫る](https://qiita.com/moritalous/items/7ce39c46fcddb9870476)
 
 ## Claude3
 
