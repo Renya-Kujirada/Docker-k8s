@@ -63,8 +63,14 @@ EC2 上のコンテナにクイックに構築したいケースにも利用で�
 
 大変参考になったので自分用にメモしました．
 
-## [RAG Survey](https://ren8k.github.io/Infra-tips/docs/202404281645/rag_survey.md)
+## [RAG Survey](https://ren8k.github.io/Infra-tips/docs/202404281645/rag_survey.html)
 
 RAG についての調査メモです．
 
 ## [Knowledge Bases for Amazon Bedrock を利用した RAG のベースライン](https://ren8k.github.io/Infra-tips/docs/202405021217/aws_bedrock_rag_baseline.html)
+
+Knowledge Bases for Amazon Bedrock を利用した RAG の Python 実装（ベースライン）を公開しました．紹介しているリポジトリでは，boto3 のみを利用して実装しており，利用する LLM を容易に切り替えられるようシンプルな設計にしております．加えて，LLM の設定・プロンプトなどは yaml ファイルで管理しております．Command R+や， Claude3 Opus での streaming chat も可能です．
+
+## [Knowledge Bases for Amazon Bedrock を利用した Advanced RAG のベースライン](https://ren8k.github.io/Infra-tips/docs/202405061900/aws_bedrock_advanced_rag_baseline.html)
+
+先日公開された AWS 公式の Advanced RAG の技術検証ブログの再現実装を行い，その Python 実装（ベースライン）を公開しました．紹介しているリポジトリでは，Bedrock を利用してクエリ拡張，検索結果の関連度評価を行うことが可能です．また，Claude3 Haiku に加え，Command R+を利用した Advanced RAG を検証することも可能です．

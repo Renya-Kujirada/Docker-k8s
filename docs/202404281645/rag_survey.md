@@ -33,14 +33,15 @@
 
 ## Eval RAG
 
+- [**社内規程集について回答してくれる生成 AI を評価してみた〜生成 AI のアーキテクチャ「RAG」の評価プロセス**](https://www.lac.co.jp/lacwatch/people/20240118_003651.html)
 - [Tweet](https://x.com/SnowGushiGit/status/1785901559735632146)
 - [openai/simple-evals](https://github.com/openai/simple-evals)
 - [LLM プロダクト開発における独自評価基準とデータセットの作り方の考察](https://zenn.dev/seya/articles/ba06e37d226182)
 - [LLM による LLM の評価とその評価の評価について](https://zenn.dev/seya/articles/b34345aab2949e)
-- [社内規程集について回答してくれる生成 AI を評価してみた〜生成 AI のアーキテクチャ「RAG」の評価プロセス](https://www.lac.co.jp/lacwatch/people/20240118_003651.html)
 
 ## Pinecone
 
+- [Amazon Bedrock と Pinecone でマルチモーダル検索を行う](https://acro-engineer.hatenablog.com/entry/2024/05/08/100000)
 - [Amazon Bedrock の Knowledge Base を Pinecone 無料枠で構築してみた](https://benjamin.co.jp/blog/technologies/bedrock-knowledgeaase-pinecone/)
 - [[Rust] Amazon Bedrock のナレッジベースで Pinecone 使って RAG る](https://dev.classmethod.jp/articles/rust-bedrock-pinecode-rag/)
 - [AWS Marketplace の Pinecone を Amazon Bedrock のナレッジベースとして利用する](https://aws.amazon.com/jp/blogs/news/leveraging-pinecone-on-aws-marketplace-as-a-knowledge-base-for-amazon-bedrock/)
@@ -69,7 +70,11 @@
 - [Agents for Amazon Bedrock で Web サイトにチャットボット機能を足してみる](https://zenn.dev/akring/articles/55fe4c6b9b1614)
 - [LLM エージェントのデザインパターン、Agentic Design Patterns を理解する](https://zenn.dev/loglass/articles/b9ee37737deb85)
 
-## custom library
+## LangChain
+
+- [LCEL (LangChain Expression Language) 完全に理解した - Amazon Bedrock API で始める LLM 超入門 ⑨](https://qiita.com/cyberBOSE/items/fd65de9f857d36180fa5?utm_content=buffer1784e&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+
+## Custom Library
 
 - [LangChain を使わない](https://tech-blog.abeja.asia/entry/advent-2023-day13)
 - [taikinman/langrila](https://github.com/taikinman/langrila)
@@ -96,41 +101,30 @@
 ## Amazon Q
 
 - [Amazon Q Business Application の設定方法（2024/5/1 更新）](https://qiita.com/Neville/items/8bc10b1b7a29faae1c6b)
-- [Amplify 🩷 Bedrock 〜生成 AI 入門〜](https://speakerdeck.com/minorun365/amplify-bedrock-sheng-cheng-airu-men?slide=29)
 
 ## Amplyfy
 
 - [AWS Amplify の新世代 Gen2 で生成 AI アプリをサクッとデプロイ！](https://qiita.com/minorun365/items/5cfb4ff874e90332f7ec)
+- [Amplify 🩷 Bedrock 〜生成 AI 入門〜](https://speakerdeck.com/minorun365/amplify-bedrock-sheng-cheng-airu-men?slide=29)
 
 ## 実験管理
 
 - [Langfuse](https://x.com/MLBear2/status/1785816270748926414)
 
+## bedrock studio
+
+- [Bedrock Studio がプレビューリリース！早速試しました！！（構築方法と機能の紹介）](https://qiita.com/moritalous/items/c1839948c836f5a8c853?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
+
 ## 疑問点(自分用)
 
 <details>
-<summary>prompt_template.yamlの中身（例）</summary>
+<summary>疑問点</summary>
 <br/>
 
 - OpenSearch Serverless で Analyzer を設定している場合，各チャンクに対して Char Filter, Tokenizer, Token Filter が実行され，その後 Embedding が行われるのか？
 - Knowledge Base で自身で特有のチャンキング戦略を取りたい場合（例えば，LangChain の RecursiveCharacterTextSplitterplitter を利用して各パラグラフでチャンキングしたい場合など），事前に文書を前処理で split して s3 に保存しておく必要があるのか？
 
   - [Zenn の記事](https://zenn.dev/kun432/scraps/c3d65c44e60755)では，QA の CSV ファイルの各行を別ファイルとして書き出している．
-
-- 疑問点（retrieve_and_generate の返り値について）
-
-`response = bedrock_agent_client.retrieve_and_generate`[1] の返り値につきまして，以下の違いをご教示いただきたいです．
-
-- (a) response['citations'][0]['generatedResponsePart']['textResponsePart']['text']
-- (b) response['output']['text']
-
-以下の公式ドキュメント[2][3]によると，(a)は「引用部を含む，生成されたテキスト（の一部？）」であり，(b)は「knowledge base のクエリから生成されたレスポンス」と明記されております．しかし，複数回`retrieve_and_generate`を実行しましたが，上記(a)と(b)は同値でした．こちらにつきまして，(a)と(b)の差分は無いのかどうかご教示いただけますと幸いです．
-
-よろしくお願いいたします．
-
-[1]: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html
-[2]: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateOutput.html#bedrock-Type-agent-runtime_RetrieveAndGenerateOutput-text
-[3]: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TextResponsePart.html#bedrock-Type-agent-runtime_TextResponsePart-text
 
 </details>
 <br/>
