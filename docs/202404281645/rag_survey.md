@@ -48,6 +48,7 @@
 - [openai/simple-evals](https://github.com/openai/simple-evals)
 - [LLM プロダクト開発における独自評価基準とデータセットの作り方の考察](https://zenn.dev/seya/articles/ba06e37d226182)
 - [LLM による LLM の評価とその評価の評価について](https://zenn.dev/seya/articles/b34345aab2949e)
+- [Bedrock Embeddings モデルの日本語データセット性能比較（Titan Embeddings G1/V2、Cohere Embed）](]https://qiita.com/cyberBOSE/items/2efcde0307ea069772c9?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 
 ## Pinecone
 
