@@ -30,6 +30,16 @@
 - [LangChain への OpenAI の RAG 戦略の適用](https://note.com/npaka/n/n62cd25213679)
 - [RAG (検索拡張生成) のさまざまな手法 (パターン)](https://netweblog.wordpress.com/2023/11/08/llm-advanced-rag-methods/)
 - [RAG の実案件に取り組んできた今までの知見をまとめてみた](https://dev.classmethod.jp/articles/rag-knowledge-on-real-projects/)
+- [【Bedrock×Lambda】高精度なハイブリッド検索 RAG をサーバレスで実装（Slack 連携も可）](https://qiita.com/Naoki_Ishihara/items/662d70a9bd0dc3a8c9ce?utm_content=buffer7dfba&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+- [What is a Vector Database?](https://www.nvidia.com/en-us/glossary/vector-database/)
+  - 距離の説明あり
+
+## Advanced RAG(実装)
+
+- [Corrective RAG (CRAG)](https://github.com/langchain-ai/langgraph/blob/main/examples/rag/langgraph_crag.ipynb)
+- [LangGraph とは？サンプルコードをもとにわかりやすく解説](https://book.st-hakky.com/data-science/langgraph-intro/)
+- [【Python】ChatGPT ＋ Google Custom Search API で Bing のチャットボットを再現してみた](https://qiita.com/keisuke-okb/items/3c0f82612dfc38535e53)
+- [claude3 の知識を google search で強化する](https://zenn.dev/sikmi_tech/articles/cf007fcd16c643)
 
 ## Eval RAG
 
@@ -59,6 +69,7 @@
 - [Amazon Bedrock、Amazon Aurora を組み合わせた RAG で回答精度の向上に取り組んでみた！① 概要編](https://qiita.com/Naoki_Ishihara/items/9f1b852917de19141847)
   - RAG の評価にも言及している
 - [RetrieveAndGenerate の sessionId パラメーターはセッション保持以外にクエリ書き換えも行ってくれる](https://dev.classmethod.jp/articles/retrieve-and-generate-sessionid-parameter-session-query-rewrite/)
+- [Amazon Bedrock KnowledgeBase の API を Lambda と API Gateway で利用してみた](https://benjamin.co.jp/blog/technologies/bedrock-knowledgebase-api-lambda/)
 
 ## Agents for Amazon Bedrock Return of Control
 
@@ -69,10 +80,6 @@
 
 - [Agents for Amazon Bedrock で Web サイトにチャットボット機能を足してみる](https://zenn.dev/akring/articles/55fe4c6b9b1614)
 - [LLM エージェントのデザインパターン、Agentic Design Patterns を理解する](https://zenn.dev/loglass/articles/b9ee37737deb85)
-
-## LangChain
-
-- [LCEL (LangChain Expression Language) 完全に理解した - Amazon Bedrock API で始める LLM 超入門 ⑨](https://qiita.com/cyberBOSE/items/fd65de9f857d36180fa5?utm_content=buffer1784e&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 
 ## Custom Library
 
@@ -115,6 +122,15 @@
 
 - [Bedrock Studio がプレビューリリース！早速試しました！！（構築方法と機能の紹介）](https://qiita.com/moritalous/items/c1839948c836f5a8c853?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 
+## LangChain
+
+- [LCEL (LangChain Expression Language) 完全に理解した - Amazon Bedrock API で始める LLM 超入門 ⑨](https://qiita.com/cyberBOSE/items/fd65de9f857d36180fa5)
+- [[翻訳] LangChain Expression Language を使い始める](https://qiita.com/taka_yayoi/items/f09678fe6dcd57c8d2b3)
+- [LangChain-AWS](https://python.langchain.com/v0.1/docs/integrations/platforms/aws/)
+- [【LangChain(LCEL)】3 つの Runnable 〇〇を理解する](https://blog.serverworks.co.jp/langchain-runnable-memo-1)
+- [Amazon Bedrock で入門する LangChain](https://qiita.com/moritalous/items/60bcae924812a18d65b0)
+- [実装例](https://github.com/os1ma/langchain-test-sample-20240513/blob/main/src/generate_markdown_recipe_chain.py)
+
 ## 疑問点(自分用)
 
 <details>
@@ -123,7 +139,6 @@
 
 - OpenSearch Serverless で Analyzer を設定している場合，各チャンクに対して Char Filter, Tokenizer, Token Filter が実行され，その後 Embedding が行われるのか？
 - Knowledge Base で自身で特有のチャンキング戦略を取りたい場合（例えば，LangChain の RecursiveCharacterTextSplitterplitter を利用して各パラグラフでチャンキングしたい場合など），事前に文書を前処理で split して s3 に保存しておく必要があるのか？
-
   - [Zenn の記事](https://zenn.dev/kun432/scraps/c3d65c44e60755)では，QA の CSV ファイルの各行を別ファイルとして書き出している．
 
 </details>
