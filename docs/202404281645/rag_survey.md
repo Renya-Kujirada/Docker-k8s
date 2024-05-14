@@ -131,6 +131,8 @@
 - [【LangChain(LCEL)】3 つの Runnable 〇〇を理解する](https://blog.serverworks.co.jp/langchain-runnable-memo-1)
 - [Amazon Bedrock で入門する LangChain](https://qiita.com/moritalous/items/60bcae924812a18d65b0)
 - [実装例](https://github.com/os1ma/langchain-test-sample-20240513/blob/main/src/generate_markdown_recipe_chain.py)
+- [【LangChain ゆる勉強会#5】LangChain のテスト関連機能を動かす【ランチタイム開催】](https://www.youtube.com/watch?v=BX9AgTxLLHY)
+- [【LangChain ゆる勉強会#6】LangGraph のチュートリアルを動かしながら解説](https://studyco.connpass.com/event/318741/)
 
 ## 疑問点(自分用)
 
