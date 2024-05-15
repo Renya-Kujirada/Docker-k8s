@@ -6,6 +6,7 @@
 
 - [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997)
 - [Japanese SimCSE Technical Report](https://arxiv.org/abs/2310.19349)
+- [how to survey](https://speakerdeck.com/a1da4/xin-ru-sheng-xiang-ketiyutoriaru-wen-xian-nosabeiv2?slide=17)
 
 ## My Important Article（Ragas）
 
@@ -57,7 +58,7 @@
 - [[Rust] Amazon Bedrock のナレッジベースで Pinecone 使って RAG る](https://dev.classmethod.jp/articles/rust-bedrock-pinecode-rag/)
 - [AWS Marketplace の Pinecone を Amazon Bedrock のナレッジベースとして利用する](https://aws.amazon.com/jp/blogs/news/leveraging-pinecone-on-aws-marketplace-as-a-knowledge-base-for-amazon-bedrock/)
 
-## Bedrock RAG
+## Knowledge Base for Amazon Bedrock
 
 - [AWS の生成 AI で社内文書検索！ Bedrock のナレッジベースで簡単に RAG アプリを作ってみよう](https://qiita.com/minorun365/items/24dfb0ea3afde6ed0a56)
 - [AWS の生成 AI 最新機能ハンズオン！Bedrock の Knowledge Base と Agents に入門しよう](https://qiita.com/minorun365/items/86a3667290a8e5657f65)
@@ -71,6 +72,7 @@
   - RAG の評価にも言及している
 - [RetrieveAndGenerate の sessionId パラメーターはセッション保持以外にクエリ書き換えも行ってくれる](https://dev.classmethod.jp/articles/retrieve-and-generate-sessionid-parameter-session-query-rewrite/)
 - [Amazon Bedrock KnowledgeBase の API を Lambda と API Gateway で利用してみた](https://benjamin.co.jp/blog/technologies/bedrock-knowledgebase-api-lambda/)
+- [RAG architecture with Voyage AI embedding models on Amazon SageMaker JumpStart and Anthropic Claude 3 models](https://aws.amazon.com/jp/blogs/machine-learning/rag-architecture-with-voyage-ai-embedding-models-on-amazon-sagemaker-jumpstart-and-anthropic-claude-3-models/)
 
 ## Agents for Amazon Bedrock Return of Control
 
@@ -81,6 +83,10 @@
 
 - [Agents for Amazon Bedrock で Web サイトにチャットボット機能を足してみる](https://zenn.dev/akring/articles/55fe4c6b9b1614)
 - [LLM エージェントのデザインパターン、Agentic Design Patterns を理解する](https://zenn.dev/loglass/articles/b9ee37737deb85)
+
+## フィルタリング
+
+- [【Bedrock】ナレッジベースのメタデータ検索用の metadata.json を自動作成してみた](https://qiita.com/hedgehog051/items/267014126f0e910a1adb)
 
 ## Custom Library
 
@@ -133,6 +139,10 @@
 - [実装例](https://github.com/os1ma/langchain-test-sample-20240513/blob/main/src/generate_markdown_recipe_chain.py)
 - [【LangChain ゆる勉強会#5】LangChain のテスト関連機能を動かす【ランチタイム開催】](https://www.youtube.com/watch?v=BX9AgTxLLHY)
 - [【LangChain ゆる勉強会#6】LangGraph のチュートリアルを動かしながら解説](https://studyco.connpass.com/event/318741/)
+
+## RAGOps(実例)
+
+- [運用の中で育てながら改善できる 「RAGOps」テンプレートをリリース](https://exawizards.com/exabase/studio/ragops/)
 
 ## 疑問点(自分用)
 

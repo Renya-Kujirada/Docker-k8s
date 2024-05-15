@@ -269,6 +269,7 @@ Claude3 は，，，
 - [OpenSearch を使⽤したベクトル検索](https://pages.awscloud.com/rs/112-TZM-766/images/20231005-Analytics-03-AWS.pdf)
 - [Amazon OpenSearch Serverless による手軽なログ分析](https://aws.amazon.com/jp/blogs/news/log-analytics-the-easy-way-with-amazon-opensearch-serverless/)
 - [2023 年 1 月の AWS Black Belt オンラインセミナー資料及び動画公開のご案内](https://aws.amazon.com/jp/blogs/news/2023-01-aws-blackbelt/)
+- [「Bedrock ユーザー必見！」5 分で分かる(かもしれない) Vector engine for OpenSearch Serverless](https://dev.classmethod.jp/articles/jaws-ug-tokyo-lunch-11-lt/)
 
 </details>
 <br/>
