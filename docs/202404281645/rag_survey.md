@@ -7,6 +7,9 @@
 - [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997)
 - [Japanese SimCSE Technical Report](https://arxiv.org/abs/2310.19349)
 - [how to survey](https://speakerdeck.com/a1da4/xin-ru-sheng-xiang-ketiyutoriaru-wen-xian-nosabeiv2?slide=17)
+- [Seven Failure Points When Engineering a Retrieval Augmented Generation System](https://arxiv.org/abs/2401.05856)
+  - [tweet](https://x.com/hedgehog051/status/1791150826817569261)
+- [RAGAS: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217)
 
 ## My Important Article（Ragas）
 
