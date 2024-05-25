@@ -7,6 +7,7 @@
 - [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997)
 - [Japanese SimCSE Technical Report](https://arxiv.org/abs/2310.19349)
 - [how to survey](https://speakerdeck.com/a1da4/xin-ru-sheng-xiang-ketiyutoriaru-wen-xian-nosabeiv2?slide=17)
+  - [参考](https://speakerdeck.com/kaityo256/how-to-survey)
 - [Seven Failure Points When Engineering a Retrieval Augmented Generation System](https://arxiv.org/abs/2401.05856)
   - [tweet](https://x.com/hedgehog051/status/1791150826817569261)
 - [RAGAS: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217)
@@ -27,6 +28,7 @@
 
 ## Advanced RAG
 
+- [Create a multimodal assistant with advanced RAG and Amazon Bedrock](https://aws.amazon.com/jp/blogs/machine-learning/create-a-multimodal-assistant-with-advanced-rag-and-amazon-bedrock/)
 - [Amazon Kendra と Amazon Bedrock で構成した RAG システムに対する Advanced RAG 手法の精度寄与検証](https://aws.amazon.com/jp/blogs/news/verifying-the-accuracy-contribution-of-advanced-rag-methods-on-rag-systems-built-with-amazon-kendra-and-amazon-bedrock/)
 - [Python 3.12 で増えた並列処理と、これまでの並列処理の挙動を比べてみる](https://qiita.com/ShotaOki/items/3198eb695e1c6aa8cdaa)
 - [【未経験者大歓迎】RAG 超入門：AWS が推奨する RAG を体験するハンズオン](https://qiita.com/moritalous/items/61f91039c13aeb9a51eb)
@@ -37,6 +39,7 @@
 - [【Bedrock×Lambda】高精度なハイブリッド検索 RAG をサーバレスで実装（Slack 連携も可）](https://qiita.com/Naoki_Ishihara/items/662d70a9bd0dc3a8c9ce?utm_content=buffer7dfba&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 - [What is a Vector Database?](https://www.nvidia.com/en-us/glossary/vector-database/)
   - 距離の説明あり
+- [【AI Shift Advent Calendar 2023】RAG を強化する](https://www.ai-shift.co.jp/techblog/4037)
 
 ## Advanced RAG(実装)
 
@@ -44,9 +47,13 @@
 - [LangGraph とは？サンプルコードをもとにわかりやすく解説](https://book.st-hakky.com/data-science/langgraph-intro/)
 - [【Python】ChatGPT ＋ Google Custom Search API で Bing のチャットボットを再現してみた](https://qiita.com/keisuke-okb/items/3c0f82612dfc38535e53)
 - [claude3 の知識を google search で強化する](https://zenn.dev/sikmi_tech/articles/cf007fcd16c643)
+- [Corrective RAG](https://github.com/nohanaga/busho-index/blob/main/crag_azure_ai_search_bing.ipynb)
+- [LangChain v0.2 で RAG を構築](https://note.com/npaka/n/ne892b713bd45?sub_rt=share_h)
+- [LangChain v0.2 で 単純な LLM アプリケーションを構築](https://note.com/npaka/n/n24d48303a496?sub_rt=share_h)
 
 ## Eval RAG
 
+- [Amazon Bedrock モデル評価の「人間ベースの評価」を試してみた](https://qiita.com/sugino-k/items/c7213d4a5a1ec93ee9e0)
 - [**社内規程集について回答してくれる生成 AI を評価してみた〜生成 AI のアーキテクチャ「RAG」の評価プロセス**](https://www.lac.co.jp/lacwatch/people/20240118_003651.html)
 - [Tweet](https://x.com/SnowGushiGit/status/1785901559735632146)
 - [openai/simple-evals](https://github.com/openai/simple-evals)
@@ -63,6 +70,7 @@
 
 ## Knowledge Base for Amazon Bedrock
 
+- [Amazon Bedrock + Anthropic Claude 3 開発体験ワークショップ](https://catalog.us-east-1.prod.workshops.aws/workshops/7271111a-22bd-40e7-971a-817b0c083c67/ja-JP)
 - [AWS の生成 AI で社内文書検索！ Bedrock のナレッジベースで簡単に RAG アプリを作ってみよう](https://qiita.com/minorun365/items/24dfb0ea3afde6ed0a56)
 - [AWS の生成 AI 最新機能ハンズオン！Bedrock の Knowledge Base と Agents に入門しよう](https://qiita.com/minorun365/items/86a3667290a8e5657f65)
 - [AWS 入門ブログリレー 2024〜Knowledge bases for Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-knowledge-bases-for-amazon-bedrock/)
@@ -95,6 +103,7 @@
 
 - [LangChain を使わない](https://tech-blog.abeja.asia/entry/advent-2023-day13)
 - [taikinman/langrila](https://github.com/taikinman/langrila)
+- [pdf から text を抜き出す試行錯誤のメモ](https://note.com/kan_hatakeyama/n/n1773c588ecb4)
 
 ## Command R+
 
@@ -134,6 +143,7 @@
 
 ## LangChain
 
+- [Bedrock と LCEL で AdvancedRAG のクエリ拡張をやってみる](https://qiita.com/cyberBOSE/items/89a86aa4677d3b9b2ef9)
 - [LCEL (LangChain Expression Language) 完全に理解した - Amazon Bedrock API で始める LLM 超入門 ⑨](https://qiita.com/cyberBOSE/items/fd65de9f857d36180fa5)
 - [[翻訳] LangChain Expression Language を使い始める](https://qiita.com/taka_yayoi/items/f09678fe6dcd57c8d2b3)
 - [LangChain-AWS](https://python.langchain.com/v0.1/docs/integrations/platforms/aws/)
@@ -146,6 +156,10 @@
 ## RAGOps(実例)
 
 - [運用の中で育てながら改善できる 「RAGOps」テンプレートをリリース](https://exawizards.com/exabase/studio/ragops/)
+
+## Prompt Engineering
+
+- [次世代 LLM の自律タスク実行に向けた高度なプロンプトエンジニアリングと実用例の紹介](https://developers.cyberagent.co.jp/blog/archives/46619/)
 
 ## 疑問点(自分用)
 
