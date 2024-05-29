@@ -71,6 +71,7 @@
 ## Knowledge Base for Amazon Bedrock
 
 - [Amazon Bedrock + Anthropic Claude 3 開発体験ワークショップ](https://catalog.us-east-1.prod.workshops.aws/workshops/7271111a-22bd-40e7-971a-817b0c083c67/ja-JP)
+- [Knowledge Bases for Amazon Bedrock (with OpenSearch Serverless)を SAM で実装してみた](https://dev.classmethod.jp/articles/sam-knowledge-base-for-bedrock-with-oss/)
 - [AWS の生成 AI で社内文書検索！ Bedrock のナレッジベースで簡単に RAG アプリを作ってみよう](https://qiita.com/minorun365/items/24dfb0ea3afde6ed0a56)
 - [AWS の生成 AI 最新機能ハンズオン！Bedrock の Knowledge Base と Agents に入門しよう](https://qiita.com/minorun365/items/86a3667290a8e5657f65)
 - [AWS 入門ブログリレー 2024〜Knowledge bases for Amazon Bedrock 編〜](https://dev.classmethod.jp/articles/introduction-2024-knowledge-bases-for-amazon-bedrock/)
@@ -142,6 +143,24 @@
 - [Bedrock Studio がプレビューリリース！早速試しました！！（構築方法と機能の紹介）](https://qiita.com/moritalous/items/c1839948c836f5a8c853?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 
 ## LangChain
+
+## Qiita
+
+- [Bedrock と LCEL で AdvancedRAG のクエリ拡張をやってみる](https://qiita.com/cyberBOSE/items/89a86aa4677d3b9b2ef9)
+- [LCEL （LangChain Expression Language）完全に理解した - Amazon Bedrock API で始める LLM 超入門 ⑨](https://qiita.com/cyberBOSE/items/fd65de9f857d36180fa5)
+- [Bedrock(Claude 3)対応のマルチモーダルチャットボットを Chainlit と LangChain(LCEL)で構築する](https://qiita.com/hayao_k/items/a3f7a893e4f6b71dc0b7)
+
+## AWS 公式
+
+- [LLM による検索キーワードの書き換え・拡張](https://catalog.us-east-1.prod.workshops.aws/workshops/7271111a-22bd-40e7-971a-817b0c083c67/ja-JP/rag/advanced)
+
+## 海外
+
+- [I Built an Insanely Complex RAG Flow with LangGraph – You Won't Believe How Easy It Is](https://youtu.be/NZbgduKl9Zk?si=lAmmsWfe00ZrNbnW)
+- [langgaph-course](https://github.com/emarco177/langgaph-course)
+- [LangChain <> MistralAI Cookbooks](https://github.com/mistralai/cookbook/tree/main/third_party/langchain)
+
+## others
 
 - [Bedrock と LCEL で AdvancedRAG のクエリ拡張をやってみる](https://qiita.com/cyberBOSE/items/89a86aa4677d3b9b2ef9)
 - [LCEL (LangChain Expression Language) 完全に理解した - Amazon Bedrock API で始める LLM 超入門 ⑨](https://qiita.com/cyberBOSE/items/fd65de9f857d36180fa5)
