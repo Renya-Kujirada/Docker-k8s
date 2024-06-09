@@ -23,6 +23,7 @@
 - [RAG の実装戦略まとめ](https://qiita.com/jw-automation/items/045917be7b558509fdf2)
 - [RAG での回答精度向上のためのテクニック集（基礎編）](https://zenn.dev/knowledgesense/articles/47de9ead8029ba)
 - [RAG の評価：評価の必要性と問題点](https://tech.beatrust.com/entry/2024/05/01/RAG%E3%81%AE%E8%A9%95%E4%BE%A1%EF%BC%9A%E8%A9%95%E4%BE%A1%E3%81%AE%E5%BF%85%E8%A6%81%E6%80%A7%E3%81%A8%E5%95%8F%E9%A1%8C%E7%82%B9)
+- [Retrieval-Augmented Generation システムの改善方法の紹介](https://aitc.dentsusoken.com/column/Retrieval-Augmented_Generation)
 - [RAG における Metrics-Driven Development を調べる](https://www.nogawanogawa.com/entry/metrics_driven_development)
 - [simple-simcse-ja](https://github.com/hppRC/simple-simcse-ja)
 
@@ -53,6 +54,7 @@
 
 ## Eval RAG
 
+- [build-an-automated-large-langurage-model-evaluation-pipeline-on-aws](https://github.com/aws-samples/build-an-automated-large-langurage-model-evaluation-pipeline-on-aws)
 - [Amazon Bedrock モデル評価の「人間ベースの評価」を試してみた](https://qiita.com/sugino-k/items/c7213d4a5a1ec93ee9e0)
 - [**社内規程集について回答してくれる生成 AI を評価してみた〜生成 AI のアーキテクチャ「RAG」の評価プロセス**](https://www.lac.co.jp/lacwatch/people/20240118_003651.html)
 - [Tweet](https://x.com/SnowGushiGit/status/1785901559735632146)
@@ -141,6 +143,11 @@
 ## bedrock studio
 
 - [Bedrock Studio がプレビューリリース！早速試しました！！（構築方法と機能の紹介）](https://qiita.com/moritalous/items/c1839948c836f5a8c853?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
+- [Amazon Bedrock Studio (プレビュー) を使用した生成 AI アプリケーションの構築](https://aws.amazon.com/jp/blogs/news/build-generative-ai-applications-with-amazon-bedrock-studio-preview/)
+
+## preprocess
+
+- [RAG/LLM の前処理：PyMuPDF4LLM を使用して PDF を Markdown へ変換する](https://qiita.com/cyberBOSE/items/c276d273bfc20881adfc?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 
 ## LangChain
 
