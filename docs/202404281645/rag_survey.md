@@ -95,6 +95,7 @@
 
 ## Agent for Amazon Bedrock
 
+- [Agents for Amazon Bedrock にインスタンスの情報を収集させる](https://iret.media/104390?utm_campaign=3.0%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0&utm_content=297413134&utm_medium=social&utm_source=twitter&hss_channel=tw-106958965)
 - [Agents for Amazon Bedrock で Web サイトにチャットボット機能を足してみる](https://zenn.dev/akring/articles/55fe4c6b9b1614)
 - [LLM エージェントのデザインパターン、Agentic Design Patterns を理解する](https://zenn.dev/loglass/articles/b9ee37737deb85)
 
