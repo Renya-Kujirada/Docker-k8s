@@ -140,6 +140,7 @@
 ## 実験管理
 
 - [Langfuse](https://x.com/MLBear2/status/1785816270748926414)
+- [Vol.04 LLMOps に取り組み始めた話: Langfuse](https://buildersbox.corp-sansan.com/entry/sansan-speu-04)
 
 ## bedrock studio
 
