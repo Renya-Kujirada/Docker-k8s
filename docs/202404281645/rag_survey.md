@@ -14,6 +14,7 @@
 
 ## My Important Article（Ragas）
 
+- [Ragas で LangChain の RAG 評価 を試す](https://note.com/npaka/n/n571d7e3909e5?sub_rt=share_b)
 - [LLM RAG Paradigms: Naive RAG, Advanced RAG & Modular RAG](https://medium.com/@drjulija/what-are-naive-rag-advanced-rag-modular-rag-paradigms-edff410c202e)
 - [RAG の性能を改善するための 8 つの戦略](https://fintan.jp/page/10301/)
   - RAG の性能改善には検索側と生成側から取り組む必要がある
@@ -54,6 +55,8 @@
 
 ## Eval RAG
 
+- [社内 Slack Bot を改善するために Ragas で RAG を評価する](https://note.com/qunasys/n/n2e94ca59651e)
+- [[Dify]RAG を評価するために Dify+langfuse+Ragas で連携してみた](https://qiita.com/hudebakononaka/items/1d3665223b0715e54890)
 - [build-an-automated-large-langurage-model-evaluation-pipeline-on-aws](https://github.com/aws-samples/build-an-automated-large-langurage-model-evaluation-pipeline-on-aws)
 - [Amazon Bedrock モデル評価の「人間ベースの評価」を試してみた](https://qiita.com/sugino-k/items/c7213d4a5a1ec93ee9e0)
 - [**社内規程集について回答してくれる生成 AI を評価してみた〜生成 AI のアーキテクチャ「RAG」の評価プロセス**](https://www.lac.co.jp/lacwatch/people/20240118_003651.html)
@@ -72,6 +75,7 @@
 
 ## Knowledge Base for Amazon Bedrock
 
+- [Knowledge bases for Amazon Bedrock で、電話での問い合わせを内容に応じて担当者へ振り分けてみた](https://dev.classmethod.jp/articles/knowledge-bases-for-amazon-bedrock-amazon-connect-inquiry-type/)
 - [Amazon Bedrock + Anthropic Claude 3 開発体験ワークショップ](https://catalog.us-east-1.prod.workshops.aws/workshops/7271111a-22bd-40e7-971a-817b0c083c67/ja-JP)
 - [Knowledge Bases for Amazon Bedrock (with OpenSearch Serverless)を SAM で実装してみた](https://dev.classmethod.jp/articles/sam-knowledge-base-for-bedrock-with-oss/)
 - [AWS の生成 AI で社内文書検索！ Bedrock のナレッジベースで簡単に RAG アプリを作ってみよう](https://qiita.com/minorun365/items/24dfb0ea3afde6ed0a56)
@@ -95,6 +99,7 @@
 
 ## Agent for Amazon Bedrock
 
+- [Agents for Amazon Bedrock で単一のアクショングループから複数の機能を呼び分ける](https://iret.media/104504?utm_campaign=3.0%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0&utm_content=297881608&utm_medium=social&utm_source=twitter&hss_channel=tw-106958965)
 - [Agents for Amazon Bedrock にインスタンスの情報を収集させる](https://iret.media/104390?utm_campaign=3.0%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0&utm_content=297413134&utm_medium=social&utm_source=twitter&hss_channel=tw-106958965)
 - [Agents for Amazon Bedrock で Web サイトにチャットボット機能を足してみる](https://zenn.dev/akring/articles/55fe4c6b9b1614)
 - [LLM エージェントのデザインパターン、Agentic Design Patterns を理解する](https://zenn.dev/loglass/articles/b9ee37737deb85)
@@ -152,6 +157,8 @@
 - [RAG/LLM の前処理：PyMuPDF4LLM を使用して PDF を Markdown へ変換する](https://qiita.com/cyberBOSE/items/c276d273bfc20881adfc?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 
 ## LangChain
+
+- [LangChain の LCEL（LangChain Expression Language）を使って、RAG エージェントを作ってみる。](https://zenn.dev/1mono2/scraps/b1a4dfb3bb1e9a)
 
 ## Qiita
 
