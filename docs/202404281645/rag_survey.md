@@ -199,6 +199,10 @@
 
 - [次世代 LLM の自律タスク実行に向けた高度なプロンプトエンジニアリングと実用例の紹介](https://developers.cyberagent.co.jp/blog/archives/46619/)
 
+## セキュリティ
+
+- [「生成 AI システムのセキュリティ対策 〜 ベストプラクティスと実践 〜」というタイトルで Classmethod ODYSSEY Online に登壇しました](https://dev.classmethod.jp/articles/classmethod-odyssey-online-generative-ai-aoyagi/)
+
 ## 疑問点(自分用)
 
 <details>
