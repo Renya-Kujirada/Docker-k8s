@@ -55,6 +55,9 @@
 
 ## Eval RAG
 
+- [実務における RAG 〜学びと現場のノウハウ〜](https://www.docswell.com/s/hoxo-m_inc/K4V3MW-rag)
+- [【技術選定/OSS 編】LLM プロダクト開発に LangSmith を使って評価と実験を効率化した話](https://techblog.gaudiy.com/entry/2024/07/23/080117)
+- [【開発プロセス/検証編】LLM プロダクト開発に LangSmith を使って評価と実験を効率化した話](https://techblog.gaudiy.com/entry/2024/07/23/080240)
 - [社内 Slack Bot を改善するために Ragas で RAG を評価する](https://note.com/qunasys/n/n2e94ca59651e)
 - [[Dify]RAG を評価するために Dify+langfuse+Ragas で連携してみた](https://qiita.com/hudebakononaka/items/1d3665223b0715e54890)
 - [build-an-automated-large-langurage-model-evaluation-pipeline-on-aws](https://github.com/aws-samples/build-an-automated-large-langurage-model-evaluation-pipeline-on-aws)
